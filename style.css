@@ -1,0 +1,67 @@
+body
+{
+	padding: 16px;
+}
+
+h1
+{
+	font-family:monospace, Sans-Serif, Consolas;
+	padding: 0px;
+	color: #808080;
+	margin:0px;
+}
+
+h2
+{
+	font-family:monospace, Sans-Serif, Consolas;
+	padding: 8px 0px 0px 0px;
+}
+
+h3
+{
+	font-family:monospace, Sans-Serif, Consolas;
+	padding: 8px 0px 0px 0px;
+}
+
+
+li
+{
+	margin:8px;
+}
+
+img
+{
+	 max-width: 100%;
+}
+
+.box
+{
+	background-color: #C0E090;
+	border-radius : 16px;
+	margin: 16px;
+	padding: 16px;
+}
+
+.bluebox
+{
+	background-color: #80EFFF;
+	border-radius : 4px;
+	padding: 2px;
+	margin: 2px;
+}
+
+.yellowbox
+{
+	background-color: #FFEF99;
+	border-radius : 4px;
+	padding: 2px;
+	margin: 2px;
+}
+
+.redbox
+{
+	background-color: #FF9999;
+	border-radius : 4px;
+	padding: 2px;
+	margin: 2px;
+}
