@@ -3,21 +3,17 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<script src="alcoholstovecalc.js"></script> 
 		<title>Lev on the horizon</title>
 		<meta name="viewport" content="width=640">
+		<script src="alcoholstovecalc.js"></script> 
+		<script src="navigator.js"></script> 
 	</head>
 
-	<body onload="CalcAndPrint_jonfong57();CalcAndPrint_gemini();CalcAndPrint_bg();">
+	<body onload="WriteHeaderAndFooter();WriteAlcoholStoveNavigator();CalcAndPrint_jonfong57();CalcAndPrint_gemini();CalcAndPrint_bg();">
 
-		<div align="center">
-			<img src="images/logo.png" width="320pt"/>
-			<h1>Lev on the horizon</h1>
-		</div>
-
-		<div align="center">
-			<p><a href="index.html">返回主頁</a></p>
-		</div>
+		<div id="header"></div>
+		<hr>
+		<div id="alcoholstovenavigator"></div>	
 
 		<hr>
 		
@@ -137,11 +133,10 @@
 			</ul>
 		</div>
 		
+		<hr>
 		
 		
-		<div align="center">
-			<p><a href="index.html">返回主頁</a></p>
-		</div>
+		<div id="footer"></div>
 	
 	</body>
 </html>

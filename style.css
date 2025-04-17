@@ -74,6 +74,45 @@ img
 	margin: 2px;
 }
 
+
+.graybox
+{
+	background-color: #E0E0E0;
+	border-radius : 4px;
+	padding: 2px;
+	margin: 2px;
+}
+
+#header
+{
+	text-align: center;
+}
+#footer
+{
+	text-align: center;
+}
+
+.navibox
+{
+	background-color: #F0F0F0;
+	border-radius : 4px;
+	padding: 4px;
+	margin: 4px;
+	display: inline-block;
+}
+
+
+.autofit
+{
+	display: inline-block;
+}
+
+
+.tab
+{
+	margin-left: 28px;	
+}
+
 .formbox
 {
 	width:auto;
