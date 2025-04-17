@@ -54,6 +54,8 @@ div.content
 	padding: 16px;
 	max-width: 768px;
 	text-align: left;
+	align-items: left;
+	justify-content: left;
 }
 
 .box
