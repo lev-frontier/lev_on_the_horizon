@@ -4,24 +4,27 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<title>Lev on the horizon</title>
-		<meta name="viewport" content="width=640">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="navigator.js"></script> 
 	</head>
 
-	<body>
-
-		<div align="center">
-			<img src="images/logo.png" width="320pt"/>
-			<h1>Lev on the horizon</h1>
-		</div>
-
-		<div align="center">
-			<p><a href="index.html">返回主頁</a></p>
-		</div>
-
+	<body onload="WriteHeaderAndFooter();WriteAlcoholStoveNavigator();">
+		<div id="header"></div>
 		<hr>
-		
+		<div align="center"><div class="content"> <!-- BEGIN 內容置中排版 -->
+
 		<h2>路線圖工具教學</h2>
-		<div class="box" align="left">		
+		
+		<div class="graybox autofit" align="left" id="sectionIndex">	
+			<h3 class="tab">索引</h3>
+			<ul>
+				<li><a href="#section01">如何編輯？</a></li>
+				<li><a href="#section02">如何分享出去？</a></li>
+				<li><a href="#section03">電腦版／手機板顯示上的差異</a></li>
+			</ul>
+		</div>
+		
+		<div id="section01" class="box" align="left">		
 			<h3>如何編輯？</h3>
 			<p>
 				點一下格子選取/取消選取（有黃色星星底就是選取狀態）<br>
@@ -43,8 +46,9 @@
 				<img src="images/metro_route_tutor_05.png" />
 			</p>
 		</div>
+		<div align="center"><a href="#sectionIndex">↑回到索引</a></div>
 		
-		<div class="box" align="left">		
+		<div id="section02" class="box" align="left">		
 			<h3>如何分享出去？</h3>
 			<p>
 				全部編輯完畢後，<span class="yellowbox">全選</span>整個網址列，<span class="yellowbox">複製</span>下來貼出去即可。<br><br>
@@ -72,9 +76,10 @@
 			</p>
 
 		</div>
+		<div align="center"><a href="#sectionIndex">↑回到索引</a></div>
 		
 
-		<div class="box" align="left">		
+		<div id="section03" class="box" align="left">		
 			<h3>電腦版／手機板顯示上的差異</h3>
 			<p>
 				手機板上為了方便點選，所以格子相對放大，路線的線段本身會比較看不清楚。一些虛線路段將會隱藏。<br><br>
@@ -86,13 +91,11 @@
 			</p>
 			
 		</div>
+		<div align="center"><a href="#sectionIndex">↑回到索引</a></div>
 
-
+		</div></div> <!-- END 內容置中排版 -->
 		<hr>
-
-		<div align="center">
-			<p><a href="index.html">返回主頁</a></p>
-		</div>
+		<div id="footer"></div>
 	
 	</body>
 </html>

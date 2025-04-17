@@ -37,6 +37,7 @@ function WriteAlcoholStoveNavigator()
 		+"	<ul>"
 		+"		<li><a href=\"alcoholstove_intro.html\">酒精爐介紹</a></li>"
 		+"		<li><a href=\"alcoholstove_lev.html\">阿前的酒精爐</a></li>"
+		+"		<li><a href=\"alcoholstove_stand.html\">阿前的酒精爐爐架</a></li>"
 		+"		<li><a href=\"alcoholstovecalc.html\">酒精(乙醇)消耗計算機</a></li>"
 		+"	</ul>"
 		+"</div>"
