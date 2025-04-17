@@ -43,3 +43,12 @@ function WriteAlcoholStoveNavigator()
 		+"</div>"
 	);
 }
+
+function HideLoading()
+{
+	var elements = document.getElementsByClassName("loading");
+	for (let i = 0; i < elements.length; i++) 
+	{
+		elements[i].style.display = "none";
+	}
+}
