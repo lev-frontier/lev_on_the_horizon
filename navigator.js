@@ -15,13 +15,13 @@ function WriteHeaderAndFooter()
 		+"</div>"
 
 		+"<div class=\"navibox\" align=\"center\">"
-		+"<a href=\"index.html\">←返回主頁</a>"
+		+"<a href=\"index.html\">◀返回首頁</a>"
 		+"</div>"
 	);
 	
 	WriteHTML("footer",
-		"<div class=\"navibox\" align=\"center\">"
-		+"<a href=\"index.html\">←返回主頁</a>．<a href=\"#header\">↑返回頁首</a>"
+		"<div align=\"center\">"
+		+"<span class=\"navibox\"><a href=\"index.html\">◀返回首頁</a></span>．<span class=\"navibox\"><a href=\"#header\">▲捲動回頁面上方</a></span>"
 		+"</div>"
 	);
 }

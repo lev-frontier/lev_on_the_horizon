@@ -10,13 +10,13 @@
 
 	<body onload="HideLoading();">
 
-		<div align="center">
+		<div id="header" align="center">
 			<img style="padding-top: 8px;" src="images/logo.gif" width="320pt" />
 			<h1>Lev on the horizon</h1>
 		</div>
 		
 		<div align="center">
-			<p>阿前的小工具、教學、遊記分享（也許應該）</p>
+			<p class="no-select" style="font-size: 0.8em;">阿前的小工具、教學、遊記分享（也許應該）</p>
 		</div>
 
 		<hr>
@@ -34,7 +34,7 @@
 				<li><a href="https://lev-frontier.github.io/100lesserpeaks_metro/metro.html" target="_blank">台灣小百岳路線圖</a></li>
 			</ul>
 			
-			<p>&#9658; 先<a href="metro_tutor.html">觀看路線圖工具教學請點此<img src="images/pointerhand.gif" style="height:32px; transform: translateY(16px);" /></a></p>
+			<p>&#9658; 先<a href="metro_tutor.html">觀看路線圖工具教學請點此<img src="images/pointerhand.gif" class="pointerhand" /></a></p>
 			
 			<h3>阿前的紀錄（不定期更新）</h2>
 			<ul>
@@ -56,14 +56,14 @@
 		<div class="box" align="left">
 			
 			<h3><a href="alcoholstove_lev.html">阿前的酒精爐
-			<br><br><img loading="lazy" class="stoveimg" src="images/stove/preview.gif" width="256"/></a></h3>
+			<br><br><div class="image-wrapper" width="256" height="256"><img loading="lazy" class="stoveimg" src="images/stove/preview.gif" style="min-width:256px;" width="256" height="256"/><img src="images/pointerhand.gif" class="pointerhand" style="left:75%;top:75%;"/></div></a></h3>
 			<p>介紹阿前購買與DIY自製的酒精爐。</p>
 			
 		</div>
 		<div class="box" align="left">
 			
 			<h3><a href="alcoholstove_stand.html">阿前的酒精爐爐架
-			<br><br><img loading="lazy" class="stoveimg" src="images/stovestand/preview.gif" width="192"/></a></h3>
+			<br><br><div class="image-wrapper" width="192" height="192"><img loading="lazy" class="stoveimg" src="images/stovestand/preview.gif" style="min-width:192px;" width="192px" height="192"/><img src="images/pointerhand.gif"class="pointerhand" style="left:75%;top:75%;" /></div></a></h3>
 			<p>酒精爐沒設計自帶爐架的話，都需要額外的爐架。</p>
 			
 		</div>
@@ -75,10 +75,11 @@
 		</div>
 
 		</div></div> <!-- END 內容置中排版 -->
+		
 		<hr>
 
 		<div align="center">
-			<p>意見交流歡迎聯絡阿前～</p>
+		<span class="navibox"><a href="#header">▲捲動回頁面上方</a></span>
 		</div>
 		
 		<script src="lazyload.js"></script>
