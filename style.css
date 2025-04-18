@@ -54,6 +54,14 @@ img.loading
 	margin-bottom: -20%;
 }
 
+.lazy-img {
+  filter: blur(10px);
+  transition: filter 0.3s ease;
+}
+.lazy-img.loaded {
+  filter: blur(0);
+}
+
 @-webkit-keyframes rotating /* Safari and Chrome */ {
   from {
     -webkit-transform: rotate(0deg);
@@ -215,6 +223,7 @@ div.content
 
 .stoveimg
 {
+	width: 512px;
 	max-width:50%;
 	min-width: 128px;
 	display: inline-block;

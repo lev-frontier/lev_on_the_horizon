@@ -10,7 +10,7 @@ function WriteHeaderAndFooter()
 {
 	WriteHTML("header",
 		"<div align=\"center\">"
-		+"	<img style=\"padding-top: 8px;\" src=\"images/logo.png\" width=\"320pt\"/>"
+		+"	<img style=\"padding-top: 8px;\" src=\"images/logo.gif\" width=\"320pt\"/>"
 		+"	<h1>Lev on the horizon</h1>"
 		+"</div>"
 
