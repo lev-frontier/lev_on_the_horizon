@@ -36,6 +36,7 @@ function WriteAlcoholStoveNavigator()
 		+"	<h3 class=\"tab\">酒精爐專區</h3>"
 		+"	<ul>"
 		+"		<li><a href=\"alcoholstove_intro.html\">酒精爐介紹</a></li>"
+		+"		<li><a href=\"alcoholstove_effectivity.html\">酒精爐vs高山瓦斯爐</a></li>"
 		+"		<li><a href=\"alcoholstove_lev.html\">阿前的酒精爐</a></li>"
 		+"		<li><a href=\"alcoholstove_stand.html\">阿前的酒精爐爐架</a></li>"
 		+"		<li><a href=\"alcoholstove_windscreen.html\">阿前的擋風板</a></li>"

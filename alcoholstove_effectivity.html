@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Lev on the horizon</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="navigator.js"></script> 
+	</head>
+
+	<body onload="HideLoading();WriteHeaderAndFooter();WriteAlcoholStoveNavigator();">
+		<div id="header"></div>
+		<hr>		
+		<div align="center"><div class="content"> <!-- BEGIN 內容置中排版 -->
+		<div id="alcoholstovenavigator"></div>	
+
+		<hr>
+		
+		<h2>酒精爐vs高山瓦斯爐</h2>
+		
+		<div class="graybox autofit" align="left" id="sectionIndex">	
+			<h3 class="tab">索引</h3>
+			<ul>
+				<li><a href="#section01">酒精爐在重量上的優勢</a></li>
+				<li><a href="#section02">預計燒水次數攜帶初始總重量分析</a></li>
+				<li><a href="#section03">隨著煮水次數增加消耗燃料後，剩餘的重量變化</a></li>
+				<li><a href="#section04">高山瓦斯爐不可取代性</a></li>
+			</ul>
+		</div>
+		
+		
+		<hr>
+		
+		<h3 id="section01">酒精爐在重量上的優勢</h3>
+		<p>
+			使用高山瓦斯燃燒效益，純看瓦斯消耗量其實比酒精還要高，同等煮沸500ML的水，瓦斯可能消耗不到8g，燃燒酒精卻要24g。
+		</p>
+		<p>
+			但瓦斯罐本體的重量完全抵消燃燒效益優勢，而燃燒酒精則用多少帶多少，且隨著行程結束重量越來越少，瓦斯罐空重可是實實在在的重量。
+		</p>
+		<table border="1"  class="box autofit" cellpadding="8" cellspacing="0">
+		  <thead>
+			<tr><th>名稱</th><th>空重 (g)</th><th>總重 (g)</th></tr>
+		  </thead>
+		  <tbody>
+			<tr><td>110G 瓦斯罐</td><td>100</td><td>210</td></tr>
+			<tr><td>230G 瓦斯罐</td><td>150</td><td>380</td></tr>
+			<tr><td>450G 瓦斯罐</td><td>216</td><td>666</td></tr>
+			<tr><td>酒精爐(爐體+爐架)</td><td>50</td><td>－</td></tr>
+		  </tbody>
+		</table>
+
+		
+		
+		<div align="center"><a href="#sectionIndex">△回到索引</a></div>
+		
+		<hr>
+		
+		
+		<h3 id="section02">預計燒水次數攜帶初始總重量分析</h3>
+		<p>
+			酒精爐具整體重量較小，隨著燒水次數遞增攜帶相對的酒精量即可；瓦斯罐則不論燒水量多寡，初始重量都必須帶一整罐（假設為全新的瓦斯罐）。
+			<br>
+			<table border="1" class="box autofit" cellpadding="8" cellspacing="0" style="font-size:0.8em;">
+			  <thead>
+				<tr>
+				  <th>燒水次數</th>
+				  <th style="background-color: #AF3">110g瓦斯罐</th>
+				  <th style="background-color: #FE3">230g瓦斯罐</th>
+				  <th style="background-color: #F53">450g瓦斯罐</th>
+				  <th style="background-color: #3CF">酒精爐</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>1</td><td>210g</td><td>380g</td><td>666g</td><td>74g</td></tr>
+				<tr><td>2</td><td>210g</td><td>380g</td><td>666g</td><td>98g</td></tr>
+				<tr><td>3</td><td>210g</td><td>380g</td><td>666g</td><td>122g</td></tr>
+				<tr><td>4</td><td>210g</td><td>380g</td><td>666g</td><td>146g</td></tr>
+				<tr><td>5</td><td>210g</td><td>380g</td><td>666g</td><td>170g</td></tr>
+				<tr><td>6</td><td>210g</td><td>380g</td><td>666g</td><td>194g</td></tr>
+				<tr><td>7</td><td>210g</td><td>380g</td><td>666g</td><td style="background-color: #AF3">218g</td></tr>
+				<tr><td>8</td><td>210g</td><td>380g</td><td>666g</td><td>242g</td></tr>
+				<tr><td>9</td><td>210g</td><td>380g</td><td>666g</td><td>266g</td></tr>
+				<tr><td>10</td><td>210g</td><td>380g</td><td>666g</td><td>290g</td></tr>
+				<tr><td>11</td><td>210g</td><td>380g</td><td>666g</td><td>314g</td></tr>
+				<tr><td>12</td><td>210g</td><td>380g</td><td>666g</td><td>338g</td></tr>
+				<tr><td>13</td><td>210g</td><td>380g</td><td>666g</td><td>362g</td></tr>
+				<tr><td>14</td><td style="color:#999">420g</td><td>380g</td><td>666g</td><td style="background-color: #FE3">386g</td></tr>
+				<tr><td>15</td><td style="color:#999">420g</td><td>380g</td><td>666g</td><td>410g</td></tr>
+				<tr><td>16</td><td style="color:#999">420g</td><td>380g</td><td>666g</td><td>434g</td></tr>
+				<tr><td>17</td><td style="color:#999">420g</td><td>380g</td><td>666g</td><td>458g</td></tr>
+				<tr><td>18</td><td style="color:#999">420g</td><td>380g</td><td>666g</td><td>482g</td></tr>
+				<tr><td>19</td><td style="color:#999">420g</td><td>380g</td><td>666g</td><td>506g</td></tr>
+				<tr><td>20</td><td style="color:#999">420g</td><td>380g</td><td>666g</td><td>530g</td></tr>
+				<tr><td>21</td><td style="color:#999">420g</td><td>380g</td><td>666g</td><td>554g</td></tr>
+				<tr><td>22</td><td style="color:#999">420g</td><td>380g</td><td>666g</td><td>578g</td></tr>
+				<tr><td>23</td><td style="color:#999">420g</td><td>380g</td><td>666g</td><td>602g</td></tr>
+				<tr><td>24</td><td style="color:#999">420g</td><td>380g</td><td>666g</td><td>626g</td></tr>
+				<tr><td>25</td><td style="color:#999">420g</td><td>380g</td><td>666g</td><td>650g</td></tr>
+				<tr><td>26</td><td style="color:#999">420g</td><td>380g</td><td>666g</td><td style="background-color: #F53">674g</td></tr>
+				<tr><td>27</td><td style="color:#999">420g</td><td>380g</td><td>666g</td><td>698g</td></tr>
+				<tr><td>28</td><td style="color:#BBB">630g</td><td>380g</td><td>666g</td><td>722g</td></tr>
+				<tr><td>29</td><td style="color:#BBB">630g</td><td style="color:#999">760g</td><td>666g</td><td>746g</td></tr>
+				<tr><td>30</td><td style="color:#BBB">630g</td><td style="color:#999">760g</td><td>666g</td><td>770g</td></tr>
+			  </tbody>
+			</table>
+		</p>
+		
+		
+		<h4>關係圖表</h4>
+		<p><img loading="lazy" class="lazy-img" style="width:100%" src="images/effectivity/small/01.jpg" data-src="images/effectivity/01.jpg" width="512" /> </p>
+
+		<p>
+		<ul>
+			<li>110g 和 230g 瓦斯罐重量會「跳階」式上升，因為燃料用量增加到需要多帶一罐的時候。</li>
+			<li>450g 瓦斯罐幾乎能應付所有 30 次內的煮水次數，但本體較重。</li>
+			<li>酒精爐重量隨煮水次數線性上升，優勢在於低次數輕量、好掌控。</li>
+		</ul>
+		</p>
+		
+		<div align="center"><a href="#sectionIndex">△回到索引</a></div>
+		
+		
+		<hr>
+		
+		
+		
+		<h3 id="section03">隨著煮水次數增加消耗燃料後，剩餘的重量變化</h3>		
+		<p>
+		<table border="1" class="box autofit" cellpadding="8" cellspacing="0" style="font-size:0.8em;">
+			<thead>
+				<tr style="text-align: right;"><th>燒水次數</th>
+				<th style="background-color: #AF3">110g瓦斯罐</th>
+				<th style="background-color: #FE3">230g瓦斯罐</th>
+				<th style="background-color: #F53">450g瓦斯罐</th>
+				<th style="background-color: #3FD">酒精爐(110g燃料)</th>
+				<th style="background-color: #3AF">酒精爐(230g燃料)</th>
+				<th style="background-color: #E3F">酒精爐(450g燃料)</th></tr>
+			</thead>
+			<tbody>
+				<tr><th>0</th><td>210</td><td>380</td><td>666</td><td>160</td><td>280</td><td>500</td></tr>
+				<tr><th>1</th><td>202</td><td>372</td><td>658</td><td>136</td><td>256</td><td>476</td></tr>
+				<tr><th>2</th><td>194</td><td>364</td><td>650</td><td>112</td><td>232</td><td>452</td></tr>
+				<tr><th>3</th><td>186</td><td>356</td><td>642</td><td>88</td><td>208</td><td>428</td></tr>
+				<tr><th>4</th><td>178</td><td>348</td><td>634</td><td>64</td><td>184</td><td>404</td></tr>
+				<tr><th>5</th><td>170</td><td>340</td><td>626</td><td style="color:#BBB">50</td><td>160</td><td>380</td></tr>
+				<tr><th>6</th><td>162</td><td>332</td><td>618</td><td style="color:#BBB">50</td><td>136</td><td>356</td></tr>
+				<tr><th>7</th><td>154</td><td>324</td><td>610</td><td style="color:#BBB">50</td><td>112</td><td>332</td></tr>
+				<tr><th>8</th><td>146</td><td>316</td><td>602</td><td style="color:#BBB">50</td><td>88</td><td>308</td></tr>
+				<tr><th>9</th><td>138</td><td>308</td><td>594</td><td style="color:#BBB">50</td><td>64</td><td>284</td></tr>
+				<tr><th>10</th><td>130</td><td>300</td><td>586</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td><td>260</td></tr>
+				<tr><th>11</th><td>122</td><td>292</td><td>578</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td><td>236</td></tr>
+				<tr><th>12</th><td>114</td><td>284</td><td>570</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td><td>212</td></tr>
+				<tr><th>13</th><td>106</td><td>276</td><td>562</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td><td>188</td></tr>
+				<tr><th>14</th><td style="color:#BBB">100</td><td>268</td><td>554</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td><td>164</td></tr>
+				<tr><th>15</th><td style="color:#BBB">100</td><td>260</td><td>546</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td><td>140</td></tr>
+				<tr><th>16</th><td style="color:#BBB">100</td><td>252</td><td>538</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td><td>116</td></tr>
+				<tr><th>17</th><td style="color:#BBB">100</td><td>244</td><td>530</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td><td>92</td></tr>
+				<tr><th>18</th><td style="color:#BBB">100</td><td>236</td><td>522</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td><td>68</td></tr>
+				<tr><th>19</th><td style="color:#BBB">100</td><td>228</td><td>514</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td></tr>
+				<tr><th>20</th><td style="color:#BBB">100</td><td>220</td><td>506</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td></tr>
+				<tr><th>21</th><td style="color:#BBB">100</td><td>212</td><td>498</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td></tr>
+				<tr><th>22</th><td style="color:#BBB">100</td><td>204</td><td>490</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td></tr>
+				<tr><th>23</th><td style="color:#BBB">100</td><td>196</td><td>482</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td></tr>
+				<tr><th>24</th><td style="color:#BBB">100</td><td>188</td><td>474</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td></tr>
+				<tr><th>25</th><td style="color:#BBB">100</td><td>180</td><td>466</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td></tr>
+				<tr><th>26</th><td style="color:#BBB">100</td><td>172</td><td>458</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td></tr>
+				<tr><th>27</th><td style="color:#BBB">100</td><td>164</td><td>450</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td></tr>
+				<tr><th>28</th><td style="color:#BBB">100</td><td>156</td><td>442</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td></tr>
+				<tr><th>29</th><td style="color:#BBB">100</td><td>150</td><td>434</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td></tr>
+				<tr><th>30</th><td style="color:#BBB">100</td><td style="color:#BBB">150</td><td>426</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td><td style="color:#BBB">50</td></tr>
+			</tbody>
+		</table>
+		</p>
+		<h4>關係圖表</h4>
+		<p><img loading="lazy" class="lazy-img" style="width:100%" src="images/effectivity/small/02.jpg" data-src="images/effectivity/02.jpg" width="512" /> </p>
+
+		<p>
+			<ul>
+				<li>當燃料耗盡後，剩餘重量固定為 空罐或爐體重量。</li>
+				<li>酒精爐的重量下降比較快，因為消耗率高，且「空爐本體較輕」。</li>
+				<li>瓦斯罐最低剩餘重量為空罐重，110g罐是 100g，230g 是 150g，450g 是 216g。</li>
+			</ul>
+		</p>
+		
+		
+		<div align="center"><a href="#sectionIndex">△回到索引</a></div>
+
+		<hr>
+
+		<h3 id="section04">高山瓦斯爐不可取代性</h3>
+		<p>
+			雖然以重量來論，酒精爐貌似都有極大的優勢，但實際上高山瓦斯爐還是有許多不可取代性：
+		</p>
+		<p>
+			<ul class="box autofit">
+			  <li><strong>需要在密閉空間使用（譬如山屋或帳棚）：</strong><ul><li>酒精爐在密閉空間中燃燒不完全，增加一氧化碳風險；瓦斯爐則較為安全。</li><li>酒精燃燒的大火還會嚇到人，氣味也很重。</li></ul></li>
+			  <li><strong>抗風雨能力較佳：</strong><ul><li>瓦斯爐火焰穩定，適應風雨環境；酒精爐需要額外擋風板。</li></ul></li>
+			  <li><strong>跟其他隊友方便互相支援：</strong><ul><li>瓦斯罐可互相支援，若隊友的瓦斯用完，可以互借。</li></ul></li>
+			  <li><strong>易用性較高：</strong><ul><li>酒精爐需要更精細的操作，且每個環節都要注意。</li></ul></li>
+			  <li><strong>高海拔表現：</strong><ul><li>高山瓦斯爐能在低氣壓下有效燃燒，而酒精爐在高海拔效率降低。</li></ul></li>
+			  <li><strong>快速加熱：</strong><ul><li>高山瓦斯爐加熱速度較快，對於寒冷環境下保持體溫尤為重要。</li></ul></li>
+			  <li><strong>穩定性與可控性：</strong><ul><li>瓦斯爐的火力穩定且調控精確，而酒精爐受環境影響較大。</li></ul></li>
+			  <li><strong>燃料效率：</strong><ul><li>高山瓦斯爐較為高效，減少頻繁補充燃料的需求。</li></ul></li>
+			  <li><strong>冷環境適應能力：</strong><ul><li>高山瓦斯爐在寒冷環境下依然能穩定燃燒，而酒精爐在低溫下表現較差。</li></ul></li>
+			</ul>
+		</p>
+
+		
+		
+		<div align="center"><a href="#sectionIndex">△回到索引</a></div>
+		
+		
+
+		</div></div> <!-- END 內容置中排版 -->
+		<hr>		
+		<div id="footer"></div>
+	
+		<script src="lazyload.js"></script>
+	</body>
+</html>
