@@ -33,7 +33,6 @@ h6
 	font-family:monospace, Sans-Serif, Consolas;
 	margin: 2px 0px;
 }
-
 ul
 {
 	padding: 0px 0px 0px 16px;
@@ -143,6 +142,78 @@ div.content
 	justify-content: left;
 }
 
+.rating
+{
+	display: inline-block;
+	white-space: nowrap;
+}
+
+star_e
+{
+	display: inline-block;
+	width: 1em;       /* 寬度等於一個字的寬度 */
+	height: 1em;      /* 高度等於字體大小 */
+	vertical-align: middle; /* 或 text-bottom，看排版需要 */
+	background-image: url('images/star_e.svg'); /* 換成你要的圖 */
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	transform: translateY(-1px);
+}
+star_f
+{
+	display: inline-block;
+	width: 1em;       /* 寬度等於一個字的寬度 */
+	height: 1em;      /* 高度等於字體大小 */
+	vertical-align: middle; /* 或 text-bottom，看排版需要 */
+	background-image: url('images/star_f.svg'); /* 換成你要的圖 */
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	transform: translateY(-1px);
+}
+
+
+
+.fire_icon_title::before {
+	content: "";
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	background-image: url('images/fire_f.svg'); /* 可以是 PNG 或 SVG */
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	margin-right: 0em;
+	transform: translateY(-3px);
+}
+
+fire_e
+{
+	display: inline-block;
+	width: 1em;       /* 寬度等於一個字的寬度 */
+	height: 1em;      /* 高度等於字體大小 */
+	vertical-align: middle; /* 或 text-bottom，看排版需要 */
+	background-image: url('images/fire_e.svg'); /* 換成你要的圖 */
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	transform: translateY(-3px);
+}
+fire_f
+{
+	display: inline-block;
+	line-height:1em;
+	width: 1em;       /* 寬度等於一個字的寬度 */
+	height: 1em;      /* 高度等於字體大小 */
+	vertical-align: middle; /* 或 text-bottom，看排版需要 */
+	background-image: url('images/fire_f.svg'); /* 換成你要的圖 */
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	transform: translateY(-3px);
+}
+
 .tag
 {
 	display: inline-block;
@@ -156,6 +227,22 @@ div.content
 	border-radius : 16px;
 	margin: 16px 2px;
 	padding: 8px 16px;
+}
+
+.pinkbox
+{
+	background-color: #F0A0C0;
+	border-radius : 4px;
+	padding: 2px;
+	margin: 2px;
+}
+
+.purplebox
+{
+	background-color: #A090FF;
+	border-radius : 4px;
+	padding: 2px;
+	margin: 2px;
 }
 
 .bluebox
@@ -182,6 +269,14 @@ div.content
 	margin: 2px;
 }
 
+.lightgreenbox
+{
+	background-color: #CFFF90;
+	border-radius : 4px;
+	padding: 2px;
+	margin: 2px;
+}
+
 .yellowbox
 {
 	background-color: #FFEF99;
@@ -200,7 +295,7 @@ div.content
 
 .redbox
 {
-	background-color: #FF9999;
+	background-color: #FF8080;
 	border-radius : 4px;
 	padding: 2px;
 	margin: 2px;
@@ -263,7 +358,7 @@ div.content
 
 .stoveimg
 {
-	max-width:50%;
+	max-width:48%;
 	min-width: 128px;
 	display: inline-block;
 }

@@ -5,6 +5,10 @@ function WriteHTML(elementId, innerHTML)
 		element.innerHTML = innerHTML;	
 }
 
+const symbolMap = {
+	'★': '<star_f></star_f>',
+	'☆': '<star_e></star_e>'
+};
 
 function WriteHeaderAndFooter()
 {
@@ -24,8 +28,15 @@ function WriteHeaderAndFooter()
 		+"<span class=\"navibox\"><a href=\"index.html\">◀返回首頁</a></span>．<span class=\"navibox\"><a href=\"#header\">▲捲動回頁面上方</a></span>"
 		+"</div>"
 	);
-}
+	
 
+	// REPLACE RATING STAR:
+	document.querySelectorAll('.rating').forEach(el => {
+	el.innerHTML = el.textContent.split('').map(char =>
+		symbolMap[char] || char
+	).join('');
+	});
+}
 
 
 
