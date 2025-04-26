@@ -7,7 +7,8 @@ function WriteHTML(elementId, innerHTML)
 
 const symbolMap = {
 	'★': '<star_f></star_f>',
-	'☆': '<star_e></star_e>'
+	'☆': '<star_e></star_e>',
+	'*': '<star_half></star_half>'
 };
 
 function WriteHeaderAndFooter()
@@ -32,10 +33,14 @@ function WriteHeaderAndFooter()
 
 	// REPLACE RATING STAR:
 	document.querySelectorAll('.rating').forEach(el => {
-	el.innerHTML = el.textContent.split('').map(char =>
-		symbolMap[char] || char
-	).join('');
-	});
+	let content = el.textContent;
+	for (const [key, value] of Object.entries(symbolMap)) {
+		content = content.split(key).join(value);
+		// 或使用正規式（若 key 有特殊符號可考慮加 escape）
+		// content = content.replace(new RegExp(key, 'g'), value);
+	}
+	el.innerHTML = content;
+});
 }
 
 
