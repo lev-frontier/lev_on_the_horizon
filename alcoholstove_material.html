@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Lev on the horizon</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="navigator.js"></script> 
+	</head>
+
+	<body>
+		<div id="header"></div><script>WriteHeader();</script>
+		<hr>
+		<div align="center"><div class="content"> <!-- BEGIN 內容置中排版 -->
+		<div id="alcoholstovenavigator"></div><script>WriteAlcoholStoveNavigator();</script>
+		
+		<hr>
+		
+		<h2 class="fire_icon_title">爐心材料測試</h2>
+		<p>
+			防火棉酒精爐是靠著棉材吸收酒精慢慢釋放的特性達到控制火焰燃燒效率，也就是只要是可以吸水的材質有機會拿來當作爐心。
+		</p>
+
+		<div class="graybox autofit" align="left" id="sectionIndex">	
+			<h3 class="tab">索引</h3>
+			<ul id="toc">
+				<!-- JavaScript 會自動填充索引 -->
+			</ul>
+		</div>
+		
+		<!-- 下面的 .box 都會加上 data-section 屬性來標示 -->
+		
+		<div class="box" align="left" data-section="一次性毛巾">	
+			<h3>一次性毛巾 <span class="rating">★★☆☆☆</span></h3>
+			<p>嘗試使用用可樂罐捲入棉布延長酒精燃燒。</p>
+			<p>因非防火棉，表面會燒焦；燃燒速率很慢。</p>
+			<p>測試時無記錄起來，印象是20分鐘以上等級。</p>
+			<p>
+				<img loading="lazy" class="stoveimg lazy-img" src="images/material/small/01.jpg" data-src="images/material/01.jpg" width="512"/>
+			</p>
+		</div>	
+		
+		<div align="center"><a href="#sectionIndex">△回到索引</a></div>
+		
+		<div class="box" align="left" data-section="陶瓷纖維">		
+			<h3>陶瓷纖維 <span class="rating">★★★★☆</span></h3>
+			<p>火焰燃燒穩定，但速率也很慢，這種很慢穩定釋放的一般來說適合慢燉。</p>
+			<p>20ml乙醇，室溫大約25度上下，煮400ml的水約11分鐘水小滾，總燃燒時間20分鐘。</p>
+			<p>會有細小粉塵，容易掉粉，加工拿取建議戴手套、口罩、護目鏡，空手拿會手癢癢！</p>
+			<p><img loading="lazy" class="stoveimg lazy-img" src="images/material/small/02.jpg" data-src="images/material/02.jpg" width="512"/></p>
+			<p>燃燒時大多呈現穩定的藍火，不爆衝：
+			<br><img loading="lazy" class="stoveimg lazy-img" src="images/material/small/02A.jpg" data-src="images/material/02A.jpg" width="512"/></p>
+			<p>但水沸騰無法大滾，山上的水建議應該需要煮久一點：
+			<br><img loading="lazy" class="stoveimg lazy-img" src="images/material/small/02B.jpg" data-src="images/material/02B.jpg" width="512"/></p>
+			<p>雖然說材料本身防火，但燒起來還是有一些黑色焦焦的：
+			<br><img loading="lazy" class="stoveimg lazy-img" src="images/material/small/02C.jpg" data-src="images/material/02C.jpg" width="512"/></p>
+			<p>吸附材質類的共通點，殘餘釋放燃燒會等久一點：
+			<br><img loading="lazy" class="stoveimg lazy-img" src="images/material/small/02D.jpg" data-src="images/material/02D.jpg" width="512"/></p>
+		</div>
+		
+		<div align="center"><a href="#sectionIndex">△回到索引</a></div>
+		
+		<!-- End 內容置中排版 -->
+		</div></div> <!-- END 內容置中排版 -->
+		<hr>
+		
+		<div id="alcoholstovenavigator"></div>	
+		<div id="footer"></div><script>WriteFooter();</script>
+		<script>ReplaceRatingStar();</script>
+		<script src="lazyload.js"></script>
+		<script src="data-section.js"></script>
+
+	</body>
+</html>

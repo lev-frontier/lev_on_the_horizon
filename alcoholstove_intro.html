@@ -8,11 +8,11 @@
 		<script src="navigator.js"></script> 
 	</head>
 
-	<body onload="HideLoading();WriteHeaderAndFooter();WriteAlcoholStoveNavigator();">
-		<div id="header"></div>
+	<body>
+		<div id="header"></div><script>WriteHeader();</script>
 		<hr>		
 		<div align="center"><div class="content"> <!-- BEGIN 內容置中排版 -->
-		<div id="alcoholstovenavigator"></div>	
+		<div id="alcoholstovenavigator"></div><script>WriteAlcoholStoveNavigator();</script>
 
 		<hr>
 		
@@ -20,16 +20,14 @@
 		
 		<div class="graybox autofit" align="left" id="sectionIndex">	
 			<h3 class="tab">索引</h3>
-			<ul>
-				<li><a href="#section01">優點</a></li>
-				<li><a href="#section02">缺點</a></li>
-				<li><a href="#section03">注意事項</a></li>
+			<ul id="toc">
+				<!-- JavaScript 會自動填充索引 -->
 			</ul>
 		</div>
 		
 		<hr>
 		
-		<h3 id="section01">優點</h3>
+		<h3 data-section>優點</h3>
 		<p>
 				酒精爐是輕量化裝備愛好者的最愛之一，特別適合長途徒步、快速縱走與極簡野營等行程。其結構極簡、材料輕薄，具備以下幾項關鍵優勢：
 			<br>
@@ -47,7 +45,7 @@
 		
 		<hr>
 		
-		<h3 id="section02">缺點</h3>
+		<h3 data-section>缺點</h3>
 		<p>
 		酒精爐雖然結構簡單、攜帶方便，但在實際使用中也有一些潛在限制與風險：
 		<br>
@@ -66,7 +64,7 @@
 
 		<hr>
 
-		<h3 id="section03">注意事項</h3>
+		<h3 data-section>注意事項</h3>
 		<p>		
 			<ul class="box autofit">
 				<li>使用前清理周圍可燃物，避免引發火災。</li>
@@ -84,8 +82,9 @@
 
 		</div></div> <!-- END 內容置中排版 -->
 		<hr>		
-		<div id="footer"></div>
-	
+		<div id="footer"></div><script>WriteFooter();</script>
+		<script>ReplaceRatingStar();</script>
 		<script src="lazyload.js"></script>
+		<script src="data-section.js"></script>
 	</body>
 </html>

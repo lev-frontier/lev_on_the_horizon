@@ -8,11 +8,11 @@
 		<script src="navigator.js"></script> 
 	</head>
 
-	<body onload="HideLoading();WriteHeaderAndFooter();WriteAlcoholStoveNavigator();">
-		<div id="header"></div>
+	<body>
+		<div id="header"></div><script>WriteHeader();</script>
 		<hr>		
 		<div align="center"><div class="content"> <!-- BEGIN 內容置中排版 -->
-		<div id="alcoholstovenavigator"></div>	
+		<div id="alcoholstovenavigator"></div><script>WriteAlcoholStoveNavigator();</script>
 
 		<hr>
 		
@@ -20,18 +20,14 @@
 		
 		<div class="graybox autofit" align="left" id="sectionIndex">	
 			<h3 class="tab">索引</h3>
-			<ul>
-				<li><a href="#section01">酒精爐在重量上的優勢</a></li>
-				<li><a href="#section02">預計燒水次數攜帶初始總重量分析</a></li>
-				<li><a href="#section03">隨著煮水次數增加消耗燃料後，剩餘的重量變化</a></li>
-				<li><a href="#section04">高山瓦斯爐不可取代性</a></li>
+			<ul id="toc">
 			</ul>
 		</div>
 		
 		
 		<hr>
 		
-		<h3 id="section01">酒精爐在重量上的優勢</h3>
+		<h3 data-section>酒精爐在重量上的優勢</h3>
 		<p>
 			使用高山瓦斯燃燒效益，純看瓦斯消耗量其實比酒精還要高，同等煮沸500ML的水，瓦斯可能消耗不到8g，燃燒酒精卻要24g。
 		</p>
@@ -51,13 +47,11 @@
 		</table>
 
 		
-		
 		<div align="center"><a href="#sectionIndex">△回到索引</a></div>
 		
 		<hr>
 		
-		
-		<h3 id="section02">預計燒水次數攜帶初始總重量分析</h3>
+		<h3 data-section>預計燒水次數攜帶初始總重量分析</h3>
 		<p>
 			酒精爐具整體重量較小，隨著燒水次數遞增攜帶相對的酒精量即可；瓦斯罐則不論燒水量多寡，初始重量都必須帶一整罐（假設為全新的瓦斯罐）。
 			<br>
@@ -106,7 +100,6 @@
 			</table>
 		</p>
 		
-		
 		<h4>關係圖表</h4>
 		<p><img loading="lazy" class="lazy-img" style="width:100%" src="images/effectivity/small/01.jpg" data-src="images/effectivity/01.jpg" width="512" /> </p>
 
@@ -124,8 +117,7 @@
 		<hr>
 		
 		
-		
-		<h3 id="section03">隨著煮水次數增加消耗燃料後，剩餘的重量變化</h3>		
+		<h3 data-section>隨著煮水次數增加消耗燃料後，剩餘的重量變化</h3>		
 		<p>
 		<table border="1" class="box autofit" cellpadding="8" cellspacing="0" style="font-size:0.8em;">
 			<thead>
@@ -183,12 +175,11 @@
 			</ul>
 		</p>
 		
-		
 		<div align="center"><a href="#sectionIndex">△回到索引</a></div>
 
 		<hr>
 
-		<h3 id="section04">高山瓦斯爐不可取代性</h3>
+		<h3 data-section>高山瓦斯爐不可取代性</h3>
 		<p>
 			雖然以重量來論，酒精爐貌似都有極大的優勢，但實際上高山瓦斯爐還是有許多不可取代性：
 		</p>
@@ -205,7 +196,6 @@
 			  <li><strong>冷環境適應能力：</strong><ul><li>高山瓦斯爐在寒冷環境下依然能穩定燃燒，而酒精爐在低溫下表現較差。</li></ul></li>
 			</ul>
 		</p>
-
 		
 		
 		<div align="center"><a href="#sectionIndex">△回到索引</a></div>
@@ -214,8 +204,9 @@
 
 		</div></div> <!-- END 內容置中排版 -->
 		<hr>		
-		<div id="footer"></div>
-	
+		<div id="footer"></div><script>WriteFooter();</script>
+		<script>ReplaceRatingStar();</script>
 		<script src="lazyload.js"></script>
+		<script src="data-section.js"></script>
 	</body>
 </html>

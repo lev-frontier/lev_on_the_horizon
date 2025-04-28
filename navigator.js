@@ -11,7 +11,7 @@ const symbolMap = {
 	'*': '<star_half></star_half>'
 };
 
-function WriteHeaderAndFooter()
+function WriteHeader()
 {
 	WriteHTML("header",
 		"<div align=\"center\">"
@@ -23,26 +23,30 @@ function WriteHeaderAndFooter()
 		+"<a href=\"index.html\">◀返回首頁</a>"
 		+"</div>"
 	);
-	
+}
+
+function WriteFooter()
+{
 	WriteHTML("footer",
 		"<div align=\"center\">"
 		+"<span class=\"navibox\"><a href=\"index.html\">◀返回首頁</a></span>．<span class=\"navibox\"><a href=\"#header\">▲捲動回頁面上方</a></span>"
 		+"</div>"
 	);
-	
-
-	// REPLACE RATING STAR:
-	document.querySelectorAll('.rating').forEach(el => {
-	let content = el.textContent;
-	for (const [key, value] of Object.entries(symbolMap)) {
-		content = content.split(key).join(value);
-		// 或使用正規式（若 key 有特殊符號可考慮加 escape）
-		// content = content.replace(new RegExp(key, 'g'), value);
-	}
-	el.innerHTML = content;
-});
 }
 
+function ReplaceRatingStar()
+{
+	// REPLACE RATING STAR:
+	document.querySelectorAll('.rating').forEach(el => {
+		let content = el.textContent;
+		for (const [key, value] of Object.entries(symbolMap)) {
+			content = content.split(key).join(value);
+			// 或使用正規式（若 key 有特殊符號可考慮加 escape）
+			// content = content.replace(new RegExp(key, 'g'), value);
+		}
+		el.innerHTML = content;
+	});
+}
 
 
 function WriteAlcoholStoveNavigator()
@@ -57,17 +61,9 @@ function WriteAlcoholStoveNavigator()
 		+"		<li><a href=\"alcoholstove_lev.html\">阿前的酒精爐</a></li>"
 		+"		<li><a href=\"alcoholstove_stand.html\">阿前的酒精爐爐架</a></li>"
 		+"		<li><a href=\"alcoholstove_windscreen.html\">阿前的擋風板</a></li>"
+		+"		<li><a href=\"alcoholstove_material.html\">爐心材料測試</a></li>"
 		+"		<li><a href=\"alcoholstovecalc.html\">酒精(乙醇)消耗計算機</a></li>"
 		+"	</ul>"
 		+"</div>"
 	);
-}
-
-function HideLoading()
-{
-	var elements = document.getElementsByClassName("loading");
-	for (let i = 0; i < elements.length; i++) 
-	{
-		elements[i].style.display = "none";
-	}
 }

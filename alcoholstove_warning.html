@@ -8,11 +8,11 @@
 		<script src="navigator.js"></script> 
 	</head>
 
-	<body onload="HideLoading();WriteHeaderAndFooter();WriteAlcoholStoveNavigator();">
-		<div id="header"></div>
+	<body>
+		<div id="header"></div><script>WriteHeader();</script>
 		<hr>		
 		<div align="center"><div class="content"> <!-- BEGIN 內容置中排版 -->
-		<div id="alcoholstovenavigator"></div>	
+		<div id="alcoholstovenavigator"></div><script>WriteAlcoholStoveNavigator();</script>
 
 		<hr>
 		
@@ -22,31 +22,22 @@
 			燃燒酒精是一件非常有風險的事情！特地開專欄來講述酒精爐危險性。
 		</p>
 		
-		<div class="graybox autofit" align="left" id="sectionIndex">	
+		<div class="graybox autofit" align="left" id="sectionIndex">
 			<h3 class="tab">索引</h3>
-			<ul>
-				<li>
-					<a href="#section01">氣爆的危險性</a>
-					<ul>
-						<li><a href="#section01_001">案例一：形狀可能有關係</a></li>
-						<li><a href="#section01_002">案例二：加壓爐相對較危險</a></li>
-						<li><a href="#section01_003">如何避免</a></li>
-					</ul>
-				</li>
-				<li><a href="#section02">禁止燃燒中途添加酒精</a></li>
-				<li><a href="#section03">鋁罐酒精爐太輕</a></li>
+			<ul id="toc">
+				<!-- JavaScript 會自動填充索引 -->
 			</ul>
 		</div>
 		
 		<hr>
 		
-		<h3 id="section01"><warningicon></warningicon>氣爆的危險性</h3>
+		<h3 data-section><warningicon></warningicon>氣爆的危險性</h3>
 		<p>
 			不良的爐體設計，以及不當的操作，皆可能導致酒精氣爆！酒精會燃燒狀態瞬間噴灑出來，一有不慎，輕則小燙傷，重則火災，不可不慎！
 			
 		</p>		
-		<div id="section01_001" class="warningbox">
-			<h4>案例一：形狀可能有關係</h4>
+		<div class="warningbox">
+			<h4 data-section>案例一：形狀可能有關係</h4>
 			<p>小心這種設計的雙層酒精爐（如下網路抓圖，應該是日本大創賣的），以及避免DIY類似形狀的酒精爐。</p>
 			<img loading="lazy" class="lazy-img" src="images/warning/small/01.jpg" data-src="images/warning/01.jpg" width="512" />
 			<p>此種形狀的酒精爐，不確定是爐體形狀、夾層大小，或是打孔距離、深淺差異，點火時疑似更容易產生氣爆。</p>
@@ -57,8 +48,8 @@
 		
 		<div align="center"><a href="#sectionIndex">△回到索引</a></div>
 				
-		<div id="section01_002" class="warningbox">
-			<h4>案例二：加壓爐相對較危險</h4>
+		<div class="warningbox">
+			<h4 data-section>案例二：加壓爐相對較危險</h4>
 			<p>密封形式的加壓爐體，尤其是上層預熱盤的酒精爐。下圖為硬幣酒精爐，在中心放置硬幣使其增壓，並且直接使用上方凹處當作預熱盤（危險的味道）。</p>
 			<img loading="lazy" class="lazy-img" src="images/warning/small/02.jpg" data-src="images/warning/02.jpg" width="512"/>
 			<p>密封形式的爐體，必須靠外部燃燒預熱，等待內部酒精氣化才能燃燒。若預熱失敗，此時再重新預熱點燃，就有機會因為內部預熱到一半已經<span class="redbox tag">累積過多酒精蒸氣</span>，一瞬間點燃就爆炸。</p>
@@ -69,8 +60,8 @@
 		
 		<div align="center"><a href="#sectionIndex">△回到索引</a></div>
 		
-		<div id="section01_003" class="box">
-			<h4>如何避免</h4>
+		<div class="box">
+			<h4 data-section>如何避免</h4>
 			<p>選擇下列爐體：</p>
 			<ul>
 				<li>開放式爐體（如貓罐酒精爐）</li>
@@ -84,8 +75,8 @@
 		<div align="center"><a href="#sectionIndex">△回到索引</a></div>
 		
 		<hr>
-		
-		<h3 id="section02"><warningicon></warningicon>禁止燃燒中途添加酒精</h3>
+	
+		<h3 data-section><warningicon></warningicon>禁止燃燒中途添加酒精</h3>
 		<p>
 			除非添加器有金屬延長與防止逆燃燒的機制，不然<span class="redbox tag">嚴禁</span>酒精爐燃燒中添加新的酒精進去。
 		</p>
@@ -99,17 +90,17 @@
 		
 		<hr>
 		
-		<h3 id="section03"><warningicon></warningicon>鋁罐酒精爐太輕</h3>
+		<h3 data-section><warningicon></warningicon>鋁罐酒精爐太輕</h3>
 		<p>
 			添加燃料與點火的時候一定要注意<span class="redbox tag">不要打翻</span>酒精爐，尤其點火的時候若打翻整個燒起來會超級危險，風太大的時候操作上也要非常小心！
 		</p>
 		<div align="center"><a href="#sectionIndex">△回到索引</a></div>
 
-
 		</div></div> <!-- END 內容置中排版 -->
 		<hr>		
-		<div id="footer"></div>
-	
+		<div id="footer"></div><script>WriteFooter();</script>
+		<script>ReplaceRatingStar();</script>
 		<script src="lazyload.js"></script>
+		<script src="data-section.js"></script>
 	</body>
 </html>

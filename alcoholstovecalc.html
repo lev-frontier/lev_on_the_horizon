@@ -9,29 +9,24 @@
 		<script src="navigator.js"></script> 
 	</head>
 
-	<body onload="HideLoading();WriteHeaderAndFooter();WriteAlcoholStoveNavigator();CalcAndPrint_jonfong57();CalcAndPrint_gemini();CalcAndPrint_bg();">
+	<body onload="CalcAndPrint_jonfong57();CalcAndPrint_gemini();CalcAndPrint_bg();">
 
-		<div id="header"></div>
+		<div id="header"></div><script>WriteHeader();</script>
 		<hr>
 		<div align="center"><div class="content"> <!-- BEGIN 內容置中排版 -->
-		<div id="alcoholstovenavigator"></div>	
+		<div id="alcoholstovenavigator"></div><script>WriteAlcoholStoveNavigator();</script>
 
 		<hr>
 		
-		<h2 id="sectionIndex" class="fire_icon_title">酒精(乙醇)消耗計算機</h2>
+		<h2 class="fire_icon_title">酒精(乙醇)消耗計算機</h2>
 		<div class="graybox autofit" align="left" id="sectionIndex">	
 			<h3 class="tab">索引</h3>
-			<ul>
-				<li><a href="#section01">計算機A（jonfong57的公式）</a></li>
-				<li><a href="#section02">計算機B（Gemini提供的版本）</a></li>
-				<li><a href="#section03">計算機C（參考Backpacking Guys的版本，使用Gemini彙整）</a></li>
-				<li><a href="#section04">實地經驗</a></li>
-				<li><a href="#section05">評估酒精使用量的注意要點</a></li>
+			<ul id="toc">
 			</ul>
 		</div>
 		
 		
-		<h2 id="section01">計算機A（jonfong57的公式）</h2>
+		<h2 data-section>計算機A（jonfong57的公式）</h2>
 		<div class="box" align="left">		
 			<h3>說明</h3>
 			<ul>
@@ -65,7 +60,7 @@
 
 		<hr>
 		
-		<h2 id="section02">計算機B（Gemini提供的版本）</h2>
+		<h2 data-section>計算機B（Gemini提供的版本）</h2>
 		<div class="box" align="left">		
 			<h3>說明</h3>
 			<p>
@@ -98,7 +93,7 @@
 		<hr>
 		
 		
-		<h2 id="section03">計算機C（參考Backpacking Guys的版本，使用Gemini彙整）</h2>
+		<h2 data-section>計算機C（參考Backpacking Guys的版本，使用Gemini彙整）</h2>
 		<div class="box" align="left">		
 			<h3>說明</h3>
 			<ul>
@@ -128,7 +123,7 @@
 		<hr>
 		
 		
-		<h2 id="section04">實地經驗</h2>
+		<h2 data-section>實地經驗</h2>
 		<div class="box" align="left">
 			<p>案例一：在海拔兩千多，氣溫條件15度以下，使用甲醇燃燒，使用30ml燒500ml水燒不開（原因為甲醇有較低的熱值、海拔不夠高，沸點相對高）	</p>
 			<p>案例二：在海拔三千初，使用乙醇燃燒，使用30ml燒400ml水很快就滾了，且火焰持續燃燒一段時間（乙醇有較高的熱值、海拔高沸點低，燒水量減少）	</p>
@@ -139,7 +134,7 @@
 		<hr>
 		
 		
-		<h2 id="section05">評估酒精使用量的注意要點</h2>
+		<h2 data-section>評估酒精使用量的注意要點</h2>
 		<div class="box" align="left">
 			<ul>
 				<li>若使用野外水源或冰雪，水溫可能比氣溫低，若身上有自帶水源可以建議先使用</li>
@@ -153,8 +148,9 @@
 		
 		</div></div> <!-- END 內容置中排版 -->
 		<hr>
-		<div id="footer"></div>
-	
+		<div id="footer"></div><script>WriteFooter();</script>
+		<script>ReplaceRatingStar();</script>
 		<script src="lazyload.js"></script>
+		<script src="data-section.js"></script>
 	</body>
 </html>

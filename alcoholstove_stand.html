@@ -1,71 +1,61 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<title>Lev on the horizon</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script src="navigator.js"></script> 
-	</head>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Lev on the horizon</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="navigator.js"></script> 
+</head>
 
-	<body onload="HideLoading();WriteHeaderAndFooter();WriteAlcoholStoveNavigator();">
-		<div id="header"></div>
+<body>
+	<div id="header"></div><script>WriteHeader();</script>
+	<hr>
+	<div align="center"><div class="content"> <!-- BEGIN 內容置中排版 -->
+		<div id="alcoholstovenavigator"></div><script>WriteAlcoholStoveNavigator();</script>
 		<hr>
-		<div align="center"><div class="content"> <!-- BEGIN 內容置中排版 -->
-		<div id="alcoholstovenavigator"></div>	
-		
-		<hr>
-		
 		
 		<h2 class="fire_icon_title">阿前的酒精爐爐架</h2>
 		<p>
-			酒精爐沒自帶爐架的話，都需要額外一個爐架。	網路購買記得多比價！
+			酒精爐沒自帶爐架的話，都需要額外一個爐架。網路購買記得多比價！
 		</p>
 
-
-		<div class="graybox autofit" align="left" id="sectionIndex">	
+		<!-- 動態目錄起點 -->
+		<div class="graybox autofit" align="left" id="sectionIndex">
 			<h3 class="tab">索引</h3>
-			<ul>
-				<li><a href="#section01">組合式輕量鈦片爐架</a></li>
-				<li><a href="#section02">捲收式不鏽鋼片爐架</a></li>
+			<ul id="toc">
+				<!-- JavaScript 會自動填充索引 -->
 			</ul>
 		</div>
-		
-<!--------------------------------------------------------------------------------------------->
-<!--------------------------------------------------------------------------------------------->
-<!--------------------------------------------------------------------------------------------->
 
-
-		<div class="box" align="left" id="section01">	
+		<div class="box" align="left" data-section="組合式輕量鈦片爐架">	
 			<h3>組合式輕量鈦片爐架 <span class="bluebox tag">重量16g</span> <span class="greenbox tag">網路購買</span></h3>
-			<p> 阿前第一個入手的輕量爐架，可以收納進鍋子內，支援13cm以上的鍋子。</p>
-			<p>缺點是很薄，容易金屬疲勞，組裝後較軟，要小心架鍋子。 </p>
-			<p><img loading="lazy" class="stoveimg lazy-img" src="images/stovestand/small/01.jpg" data-src="images/stovestand/01.jpg" width="512" /> </p>
+			<p>阿前第一個入手的輕量爐架，可以收納進鍋子內，支援13cm以上的鍋子。</p>
+			<p>缺點是很薄，容易金屬疲勞，組裝後較軟，要小心架鍋子。</p>
+			<p>
+				<img loading="lazy" class="stoveimg lazy-img" src="images/stovestand/small/01.jpg" data-src="images/stovestand/01.jpg" width="512" />
+			</p>
 		</div>
-		
-		
 		<div align="center"><a href="#sectionIndex">△回到索引</a></div>
-		
-		<div class="box" align="left" id="section02">	
+
+		<div class="box" align="left" data-section="捲收式不鏽鋼片爐架">	
 			<h3>捲收式不鏽鋼片爐架 <span class="bluebox tag">重量20g</span> <span class="greenbox tag">網路購買</span></h3>
 			<p>網狀的輕量爐架，網狀結構空氣流動更好。</p>
 			<p>可以做三個大小的切換，適合直徑分別至少為9cm、8cm、7cm以上的鍋子或杯子（建議再多1cm安全空間）。</p>
-			<p>組裝後強度比<a href="#section01">組合式輕量鈦片爐架</a>高一點點，但還是要小心架鍋子。</p>
-			<p><img loading="lazy" class="stoveimg lazy-img" class="stoveimg" src="images/stovestand/small/02.jpg" data-src="images/stovestand/02.jpg" width="512"/> </p>
+			<p>組裝後強度比<a href="#toc">組合式輕量鈦片爐架</a>高一點點，但還是要小心架鍋子。</p>
+			<p>
+				<img loading="lazy" class="stoveimg lazy-img" src="images/stovestand/small/02.jpg" data-src="images/stovestand/02.jpg" width="512"/>
+			</p>
 		</div>
-				
 		<div align="center"><a href="#sectionIndex">△回到索引</a></div>
-		
-<!--------------------------------------------------------------------------------------------->
-<!--------------------------------------------------------------------------------------------->
-<!--------------------------------------------------------------------------------------------->
 
+	</div></div> <!-- END 內容置中排版 -->
+	<hr>
 
-		</div></div> <!-- END 內容置中排版 -->
-		<hr>
-		
-		<div id="alcoholstovenavigator"></div>	
-		<div id="footer"></div>
-		<script src="lazyload.js"></script>
-	</body>
+	<div id="alcoholstovenavigator"></div>	
+	<div id="footer"></div><script>WriteFooter();</script>
+	<script>ReplaceRatingStar();</script>
+	<script src="lazyload.js"></script>
+	<script src="data-section.js"></script>
+</body>
 </html>
