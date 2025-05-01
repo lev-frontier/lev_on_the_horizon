@@ -19,6 +19,10 @@ function WriteHeader()
 		+"	<h1>Lev on the horizon</h1>"
 		+"</div>"
 
+		+"<div align=\"center\">"
+		+"<img src=\"https://www.f-counter.net/j/65/1746143484/\">"
+		+"</div>"
+		
 		+"<div class=\"navibox\" align=\"center\">"
 		+"<a href=\"index.html\">◀返回首頁</a>"
 		+"</div>"
