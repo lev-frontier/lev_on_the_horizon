@@ -13,7 +13,7 @@ const symbolMap = {
 
 function WriteHeader()
 {
-	var imgText = "<img src=\"https://www.f-counter.net/j/65/1746143484/\">";
+	var imgText = "<img src=\"https://www.f-counter.net/j/65/1746146213/\">";
 	var addCounter = localStorage.getItem('lev_frontier_counter_skip') !== 'true';
 	WriteHTML("header",
 		"<div align=\"center\">"
