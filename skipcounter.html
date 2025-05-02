@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Counter Exclusion Settings</title>
+  <style>
+    body { font-family: sans-serif; padding: 2em; }
+    button { font-size: 1.2em; margin: 0.5em 0; padding: 0.5em 1em; }
+    .status { margin-top: 1em; color: green; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <h1>Counter Exclusion Settings</h1>
+
+  <button onclick="setSkip()">❌ Don't count me in!</button><br>
+  <button onclick="clearSkip()">✅  count me in!</button>
+
+  <div class="status" id="status"></div>
+
+  <script>
+	const keyName = "lev_frontier_counter_skip";
+    function setSkip() {
+      localStorage.setItem(keyName, 'true');
+      document.getElementById('status').textContent = "You will now be excluded from the counter.";
+    }
+
+    function clearSkip() {
+      localStorage.removeItem(keyName);
+      document.getElementById('status').textContent = "You will now be counted as a regular visitor.";
+    }
+
+    // Display current status
+    if (localStorage.getItem(keyName) === 'true') {
+      document.getElementById('status').textContent = "Current status: Excluded from counter ✅";
+    } else {
+      document.getElementById('status').textContent = "Current status: You will be counted ❗";
+    }
+  </script>
+
+</body>
+</html>

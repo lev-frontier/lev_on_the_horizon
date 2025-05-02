@@ -15,9 +15,14 @@
 			<h1>Lev on the horizon</h1>
 		</div>
 		
-		<div align="center">
-		<img src="https://www.f-counter.net/j/65/1746143484/">
-		</div>
+		<div id="counter-container" align="center"></div>
+		<script>
+		if (localStorage.getItem('lev_frontier_counter_skip') !== 'true') {
+		  const img = document.createElement('img');
+		  img.src = "https://www.f-counter.net/j/65/1746143484/";
+		  document.getElementById("counter-container").appendChild(img);
+		}
+		</script>
 		
 		<div align="center">
 			<p class="no-select" style="font-size: 0.8em;">阿前的小工具、教學、遊記分享（也許應該）</p>
