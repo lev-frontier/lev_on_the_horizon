@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Lev on the horizon</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="navigator.js"></script> 
+	</head>
+
+	<body>
+		<div id="header"></div><script>WriteHeader();</script>
+		<hr>
+		<div align="center"><div class="content"> <!-- BEGIN 內容置中排版 -->
+		<div id="alcoholstovenavigator"></div><script>WriteAlcoholStoveNavigator();</script>
+		
+		<hr>
+		
+		<h2 class="fire_icon_title">酒精爐類型</h2>
+		<p>
+			以下介紹不同結構的酒精爐類型（只介紹到目前製作上有遇到的）。
+		</p>
+
+		<div class="graybox autofit" align="left" id="sectionIndex">	
+			<h3 class="tab">索引</h3>
+			<ul id="toc">
+				<!-- JavaScript 會自動填充索引 -->
+			</ul>
+		</div>
+		
+		<!-- 下面的 .box 都會加上 data-section 屬性來標示 -->
+		
+		<div class="box" align="left" data-section>	
+			<h3>開放式</h3>
+			<p>只要是任意簡單結構的開放容器裝入酒精燃燒就算是。</p>
+			<p>此類酒精爐通風孔、燃燒孔大小、鍋底距離等等的皆會極大程度影響燃燒效率。</p>
+			<div class="yellowbox"><tipicon></tipicon>貓罐酒精爐若在有爐架的狀況下就是開放式，但若直接把鍋具架在罐體上封閉上方開口的時候，其實就會改變特性變成封閉型酒精爐。</div>
+			<p>
+				<img loading="lazy" class="stoveimg lazy-img" src="images/stovetype/small/01.jpg" data-src="images/stovetype/01.jpg" width="256"/>
+			</p>
+		</div>
+		<div align="center"><a href="#sectionIndex">△回到索引</a></div>
+		
+		<div class="box" align="left" data-section>	
+			<h3>雙層加壓</h3>
+			<p>分內外腔結構，中心腔體負責預熱整個爐體，使得外環腔體內的酒精蒸散並且壓力增加後噴出。</p>
+			<p>Trangia酒精爐就是最經典的類型。</p>
+			<p>
+				<img loading="lazy" class="stoveimg lazy-img" src="images/stovetype/small/02.jpg" data-src="images/stovetype/02.jpg" width="256"/>
+			</p>
+		</div>
+		<div align="center"><a href="#sectionIndex">△回到索引</a></div>
+		
+		<div class="box" align="left" data-section>	
+			<h3>雙層毛細</h3>
+			<p>透過毛細現象直接將底部酒精吸附上毛細管燃燒蒸散的類型。</p>
+			<div class="yellowbox"><tipicon></tipicon>毛細管若太粗，毛細現象不明顯狀況下，則可能會比較偏向雙層加壓結構的酒精爐。</div>
+			<p>
+				<img loading="lazy" class="stoveimg lazy-img" src="images/stovetype/small/03.jpg" data-src="images/stovetype/03.jpg" width="256"/>
+			</p>
+		</div>
+		<div align="center"><a href="#sectionIndex">△回到索引</a></div>
+		
+		<div class="box" align="left" data-section>	
+			<h3>吸附式</h3>
+			<p>透過爐心材質吸附酒精並緩釋蒸散的類型。</p>
+			<p>市面上熟悉的以小島爐為代表。</p>
+			<p>
+				<img loading="lazy" class="stoveimg lazy-img" src="images/stovetype/small/04.jpg" data-src="images/stovetype/04.jpg" width="256"/>
+			</p>
+		</div>
+		<div align="center"><a href="#sectionIndex">△回到索引</a></div>
+		
+		<div class="box" align="left" data-section>	
+			<h3>封閉加壓</h3>
+			<p>爐體封閉僅透過小孔噴發。這類型的需要在外部先預熱爐體，等待內部酒精氣體蒸散，產生壓力噴發後才會啟動。</p>
+			<p>硬幣酒精爐為經典類型。</p>
+			<p>此類酒精爐也有許多更複雜的變體，但沒做到就不單獨額外分類。</p>
+			<p>
+				<img loading="lazy" class="stoveimg lazy-img" src="images/stovetype/small/05.jpg" data-src="images/stovetype/05.jpg" width="256"/>
+			</p>
+		</div>
+		<div align="center"><a href="#sectionIndex">△回到索引</a></div>
+		
+		<!-- End 內容置中排版 -->
+		</div></div> <!-- END 內容置中排版 -->
+		<hr>
+		
+		<div id="alcoholstovenavigator"></div>	
+		<div id="footer"></div><script>WriteFooter();</script>
+		<script>ReplaceRatingStar();</script>
+		<script src="lazyload.js"></script>
+		<script src="data-section.js"></script>
+
+	</body>
+</html>

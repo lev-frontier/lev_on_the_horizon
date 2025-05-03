@@ -436,3 +436,35 @@ fire_f
 		display: inline-block;
 	}
 }
+
+
+.circle-toggle {
+  width:1.5em;
+  height: 1.5em;
+  border: none;
+  border-radius: 50%;
+  background-color: #ddd;
+  color: #333;
+  font-size: 1em;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.circle-toggle:hover {
+  background-color: #bbb;
+}
+
+.collapsible {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 1em;
+}
+
+.collapsible.expanded {
+  max-height: 2000px; /* 估一個夠大的值即可，或改用 JS scrollHeight */
+  padding: 1em;
+}

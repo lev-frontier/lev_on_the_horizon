@@ -64,6 +64,7 @@ function WriteAlcoholStoveNavigator()
 		+"		<li><a href=\"alcoholstove_intro.html\">酒精爐介紹</a></li>"
 		+"		<li><a href=\"alcoholstove_effectivity.html\">酒精爐vs高山瓦斯爐</a></li>"
 		+"		<li><a href=\"alcoholstove_warning.html\"><warningicon></warningicon>警告！！！</a></li>"
+		+"		<li><a href=\"alcoholstove_type.html\">酒精爐類型</a></li>"
 		+"		<li><a href=\"alcoholstove_lev.html\">阿前的酒精爐</a></li>"
 		+"		<li><a href=\"alcoholstove_stand.html\">阿前的酒精爐爐架</a></li>"
 		+"		<li><a href=\"alcoholstove_windscreen.html\">阿前的擋風板</a></li>"
@@ -72,4 +73,33 @@ function WriteAlcoholStoveNavigator()
 		+"	</ul>"
 		+"</div>"
 	);
+}
+
+
+function ToggleArrowButton()
+{
+	var html = 
+	"<button class=\"circle-toggle\" onclick=\"toggleNextDiv(this);\">"
+	+"<!-- 收合狀態的 SVG -->"
+    +"<svg id=\"collapseIcon\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"6 6 12 12\" width=\"24\" height=\"24\">"
+    +" <path d=\"M9 6l6 6-6 6V6z\"/>"
+    +"</svg>"
+    +"</button>";
+	document.write(html);
+}
+
+function toggleNextDiv(button) {
+  let el = button.parentElement.nextElementSibling;
+  
+  if (el && el.tagName === 'DIV') {
+    const isExpanded = el.classList.toggle('expanded');
+    
+    // 切換收合/展開的 SVG
+    const svg = button.querySelector('svg');
+    if (isExpanded) {
+      svg.innerHTML = '<path d="M6 9l6 6 6-6H6z"/>';  // 展開狀態的箭頭（▼）
+    } else {
+      svg.innerHTML = '<path d="M9 6l6 6-6 6V6z"/>';  // 收合狀態的箭頭（▶）
+    }
+  }
 }
