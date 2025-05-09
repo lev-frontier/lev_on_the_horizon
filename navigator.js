@@ -66,6 +66,7 @@ function WriteAlcoholStoveNavigator()
 		+"		<li><a href=\"alcoholstove_warning.html\"><warningicon></warningicon>警告！！！</a></li>"
 		+"		<li><a href=\"alcoholstove_type.html\">酒精爐類型</a></li>"
 		+"		<li><a href=\"alcoholstove_lev.html\">阿前的酒精爐</a></li>"
+		+"		<li><a href=\"alcoholstove_dispose.html\">已丟棄的酒精爐</a></li>"
 		+"		<li><a href=\"alcoholstove_stand.html\">阿前的酒精爐爐架</a></li>"
 		+"		<li><a href=\"alcoholstove_windscreen.html\">阿前的擋風板</a></li>"
 		+"		<li><a href=\"alcoholstove_material.html\">爐心材料測試</a></li>"
