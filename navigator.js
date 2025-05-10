@@ -11,10 +11,25 @@ const symbolMap = {
 	'*': '<star_half></star_half>'
 };
 
+function IsIndexPage()
+{
+	// 取得目前網址的路徑部分，例如 /folder/index.html
+	const path = window.location.pathname;
+	// 取得檔名部分（最後一段）
+	const page = path.substring(path.lastIndexOf('/') + 1);
+	// 如果網址沒有指定檔名，通常是資料夾，視為 index
+	return page === '' || page.startsWith('index.');	
+}
+
 function WriteHeader()
 {
 	var imgText = "<img src=\"https://www.f-counter.net/j/65/1746146213/\">";
 	var addCounter = localStorage.getItem('lev_frontier_counter_skip') !== 'true';
+	
+	var subtitle = IsIndexPage() ?
+		"<p class=\"no-select\" style=\"font-size: 0.8em;\">阿前的小工具、教學、遊記分享（也許應該）</p>"
+		: "<div class=\"navibox\" align=\"center\"><a href=\"index.html\">◀返回首頁</a></div>"
+	
 	WriteHTML("header",
 		"<div align=\"center\">"
 		+"	<img style=\"padding-top: 8px;\" src=\"images/logo.gif\" width=\"320pt\"/>"
@@ -25,17 +40,25 @@ function WriteHeader()
 		+ (addCounter ? imgText : "")
 		+"</div>"
 		
-		+"<div class=\"navibox\" align=\"center\">"
-		+"<a href=\"index.html\">◀返回首頁</a>"
-		+"</div>"
+		+ subtitle
 	);
 }
 
+
 function WriteFooter()
 {
+	var navigateLinks = IsIndexPage() ?
+		"<span class=\"navibox\"><a href=\"#header\">▲捲動回頁面上方</a></span>" 
+		: "<span class=\"navibox\"><a href=\"index.html\">◀返回首頁</a></span>．<span class=\"navibox\"><a href=\"#header\">▲捲動回頁面上方</a></span>";
+	
+	const contact = "聯絡阿前：<a href=\"mailto:lev.on.the.horizon@gmail.com\">lev.on.the.horizon@gmail.com</a>";
+	
 	WriteHTML("footer",
-		"<div align=\"center\">"
-		+"<span class=\"navibox\"><a href=\"index.html\">◀返回首頁</a></span>．<span class=\"navibox\"><a href=\"#header\">▲捲動回頁面上方</a></span>"
+		"<div align=\"center\" style=\"margin: 20px;\">"
+		+navigateLinks
+		+"</div>"
+		+"<div align=\"center\" style=\"margin: 20px;\">"
+		+ "<h6><span class=\"navibox\">" + contact + "</span></h6>"
 		+"</div>"
 	);
 }
@@ -74,6 +97,20 @@ function WriteAlcoholStoveNavigator()
 		+"</div>"
 	);
 }
+
+
+function WriteULNavigator()
+{
+	WriteHTML("ul_navigator",
+		"<div class=\"graybox autofit\" align=\"left\">	"
+		+"	<h3 class=\"tab\">輕量化登山</h3>"
+		+"	<ul>"
+		+"		<li><a href=\"ul_tent.html\">阿前的帳篷</a></li>"
+		+"	</ul>"
+		+"</div>"
+	);
+}
+
 
 
 function ToggleArrowButton()

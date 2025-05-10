@@ -180,6 +180,31 @@ star_f
 	transform: translateY(-1px);
 }
 
+mountain
+{
+	display: inline-block;
+	width: 1em;       /* 寬度等於一個字的寬度 */
+	height: 1em;      /* 高度等於字體大小 */
+	vertical-align: middle; /* 或 text-bottom，看排版需要 */
+	background-image: url('images/mountain.svg'); /* 換成你要的圖 */
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	transform: translateY(-1px);
+}
+
+.mountain_icon_title::before {
+	content: "";
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	background-image: url('images/mountain.svg'); /* 可以是 PNG 或 SVG */
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	margin-right: 0em;
+	transform: translateY(-3px);
+}
 
 
 .fire_icon_title::before {
@@ -266,6 +291,11 @@ fire_f
 {
 	display: inline-block;
 	white-space: nowrap;
+}
+
+.block
+{
+	display: inline-block;
 }
 
 

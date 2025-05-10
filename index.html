@@ -9,25 +9,7 @@
 	</head>
 
 	<body>
-
-		<div id="header" align="center">
-			<img style="padding-top: 8px;" src="images/logo.gif" width="320pt" />
-			<h1>Lev on the horizon</h1>
-		</div>
-		
-		<div id="counter-container" align="center"></div>
-		<script>
-		if (localStorage.getItem('lev_frontier_counter_skip') !== 'true') {
-		  const img = document.createElement('img');
-		  img.src = "https://www.f-counter.net/j/65/1746146213/";
-		  document.getElementById("counter-container").appendChild(img);
-		}
-		</script>
-		
-		<div align="center">
-			<p class="no-select" style="font-size: 0.8em;">阿前的小工具、教學、遊記分享（也許應該）</p>
-		</div>
-
+		<div id="header"></div><script>WriteHeader();</script>
 		<hr>
 		<div align="center"><div class="content"> <!-- BEGIN 內容置中排版 -->
 
@@ -50,6 +32,14 @@
 				<li><a href="https://tinyurl.com/ey9f9hb6" target="_blank">阿前的台灣百岳路線圖</a></li>
 				<li><a href="https://tinyurl.com/yhmybmsh" target="_blank">阿前的台灣小百岳路線圖</a></li>
 			</ul>
+			
+		</div>
+		
+		<hr>
+		<h2>輕量化登山</h2>
+		<div class="box" align="left">			
+			<h3 class="mountain_icon_title"><a href="ul_tent.html">阿前的帳篷</a></h3>
+			<p>介紹阿前登山一路上使用的帳篷。</p>
 			
 		</div>
 		
@@ -109,10 +99,9 @@
 		
 		<hr>
 
-		<div align="center">
-		<span class="navibox"><a href="#header">▲捲動回頁面上方</a></span>
-		</div>
-		
+		<div id="footer"></div><script>WriteFooter();</script>
+		<script>ReplaceRatingStar();</script>
 		<script src="lazyload.js"></script>
+		<script src="data-section.js"></script>
 	</body>
 </html>
