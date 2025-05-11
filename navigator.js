@@ -106,6 +106,7 @@ function WriteULNavigator()
 		+"	<h3 class=\"tab\">輕量化登山</h3>"
 		+"	<ul>"
 		+"		<li><a href=\"ul_tent.html\">阿前的帳篷</a></li>"
+		+"		<li><a href=\"ul_backpack.html\">阿前的登山包</a></li>"
 		+"	</ul>"
 		+"</div>"
 	);
