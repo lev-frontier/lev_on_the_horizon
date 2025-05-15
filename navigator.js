@@ -93,6 +93,7 @@ function WriteAlcoholStoveNavigator()
 		+"		<li><a href=\"alcoholstove_stand.html\">阿前的酒精爐爐架</a></li>"
 		+"		<li><a href=\"alcoholstove_windscreen.html\">阿前的擋風板</a></li>"
 		+"		<li><a href=\"alcoholstove_material.html\">爐心材料測試</a></li>"
+		+"		<li><a href=\"alcoholstove_solidfuel.html\">番外篇：固態酒精二次燃燒爐</a></li>"
 		+"	</ul>"
 		+"</div>"
 	);
