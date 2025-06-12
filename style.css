@@ -247,6 +247,9 @@ warningicon
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+h2 warningicon
+{
 	transform: translateY(-3px);
 }
 tipicon
@@ -276,7 +279,6 @@ fire_e
 fire_f
 {
 	display: inline-block;
-	line-height:1em;
 	width: 1em;       /* 寬度等於一個字的寬度 */
 	height: 1em;      /* 高度等於字體大小 */
 	vertical-align: middle; /* 或 text-bottom，看排版需要 */
@@ -284,6 +286,9 @@ fire_f
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+h2 fire_f
+{
 	transform: translateY(-3px);
 }
 
@@ -297,6 +302,89 @@ fire_f
 {
 	display: inline-block;
 }
+
+/*------------------------------------------------------------------*/
+.naviGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 4px;
+}
+
+.naviGrid a {
+  flex: 0 0 180px;              /* 桌機每格寬度統一 */
+  height: 36px;                 /* 統一高度 */
+  display: flex;
+  padding:  0px 8px;
+  align-items: center;
+  justify-content: left;
+  text-align: left;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+  box-sizing: border-box;
+  font-size: 0.85em;
+}
+
+/* 📱 手機螢幕：每行兩格 */
+@media (max-width: 600px) {
+  .naviGrid a {
+    flex: 0 0 calc(50% - 4px);  /* 保留 gap */
+  }
+}
+
+
+/*------------------------------------------------------------------*/
+
+.naviGridLarge {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.naviGridLarge a {
+  flex: 0 0 calc(50% - 6px);;                  /* 大尺寸卡片 */
+  display: flex;
+  flex-direction: column;          /* 上下排列內容 */
+  justify-content: center;
+  padding: 12px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-decoration: none;
+  color: black;
+  box-sizing: border-box;
+  height: 100px;
+  transition: background-color 0.2s;
+}
+
+.naviGridLarge a:hover {
+  background-color: #eaeaea;
+}
+
+.naviGridLarge navi-title {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.naviGridLarge navi-desc {
+  display: block;
+  font-size: 13px;
+  color: #555;
+}
+
+/* 📱 手機：1個一行 */
+@media (max-width: 600px) {
+  .naviGridLarge a {
+    flex: 0 0 100%;
+  }
+}
+
+/*------------------------------------------------------------------*/
 
 
 .box

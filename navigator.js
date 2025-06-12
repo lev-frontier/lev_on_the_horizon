@@ -78,24 +78,40 @@ function ReplaceRatingStar()
 }
 
 
-function WriteAlcoholStoveNavigator()
-{
+function WriteAlcoholStoveNavigator() {
 	WriteHTML("alcoholstovenavigator",
-		"<div class=\"graybox autofit\" align=\"left\">	"
-		+"	<h3 class=\"tab\">酒精爐專區</h3>"
-		+"	<ul>"
-		+"		<li><a href=\"alcoholstove_intro.html\">酒精爐介紹</a></li>"
-		+"		<li><a href=\"alcoholstove_effectivity.html\">酒精爐vs高山瓦斯爐</a></li>"
-		+"		<li><a href=\"alcoholstove_warning.html\"><warningicon></warningicon>警告！！！</a></li>"
-		+"		<li><a href=\"alcoholstove_type.html\">酒精爐類型</a></li>"
-		+"		<li><a href=\"alcoholstove_lev.html\">阿前的酒精爐</a></li>"
-		+"		<li><a href=\"alcoholstove_dispose.html\">已丟棄的酒精爐</a></li>"
-		+"		<li><a href=\"alcoholstove_stand.html\">阿前的酒精爐爐架</a></li>"
-		+"		<li><a href=\"alcoholstove_windscreen.html\">阿前的擋風板</a></li>"
-		+"		<li><a href=\"alcoholstove_material.html\">爐心材料測試</a></li>"
-		+"		<li><a href=\"alcoholstove_solidfuel.html\">番外篇：固態酒精二次燃燒爐</a></li>"
-		+"	</ul>"
-		+"</div>"
+		"<div class=\"graybox\" align=\"left\">" +
+		"  <h3 class=\"tab\">酒精爐專區</h3>" +
+		"  <div class=\"naviGrid\">" +
+		"    <a href=\"alcoholstove_intro.html\"><fire_f></fire_f>介紹</a>" +
+		"    <a href=\"alcoholstove_effectivity.html\"><fire_f></fire_f>對比高山瓦斯爐效益</a>" +
+		"    <a href=\"alcoholstove_warning.html\"><warningicon></warningicon>警告！！！</a>" +
+		"    <a href=\"alcoholstove_type.html\"><fire_f></fire_f>酒精爐類型</a>" +
+		"    <a href=\"alcoholstove_current.html\"><fire_f></fire_f>現役酒精爐</a>" +
+		"    <a href=\"alcoholstove_dispose.html\"><fire_f></fire_f>已丟棄的酒精爐</a>" +
+		"    <a href=\"alcoholstove_stand.html\"><fire_f></fire_f>爐架</a>" +
+		"    <a href=\"alcoholstove_windscreen.html\"><fire_f></fire_f>擋風板</a>" +
+		"    <a href=\"alcoholstove_material.html\"><fire_f></fire_f>爐心材料測試</a>" +
+		"    <a href=\"alcoholstove_spinoff.html\"><fire_f></fire_f>番外篇</a>" +
+		"  </div>" +
+		"</div>"
+	);
+}
+
+function WriteAlcoholStoveNavigatorLarge() {
+	WriteHTML("alcoholstovenavigator_large",
+		"  <div class=\"naviGridLarge\">" +
+		"    <a href=\"alcoholstove_intro.html\"><navi-title><fire_f></fire_f>介紹</navi-title><navi-desc>介紹酒精爐優缺、注意事項。</navi-desc></a>" +
+		"    <a href=\"alcoholstove_effectivity.html\"><navi-title><fire_f></fire_f>對比高山瓦斯爐效益</navi-title><navi-desc>比較酒精爐在重量上的優勢，以及講講高山瓦斯爐的不可取代性。</navi-desc></a>" +
+		"    <a href=\"alcoholstove_warning.html\"><navi-title><warningicon></warningicon>警告！！！</navi-title><navi-desc>談論使用酒精爐的一些細節所導致的危險性。</navi-desc></a>" +
+		"    <a href=\"alcoholstove_type.html\"><navi-title><fire_f></fire_f>酒精爐類型</navi-title><navi-desc>介紹幾種不同類型的酒精爐燃燒的原理。</navi-desc></a>" +
+		"    <a href=\"alcoholstove_current.html\"><navi-title><fire_f></fire_f>現役酒精爐</navi-title><navi-desc>介紹阿前購買與DIY自製的酒精爐。</navi-desc></a>" +
+		"    <a href=\"alcoholstove_dispose.html\"><navi-title><fire_f></fire_f>已丟棄的酒精爐</navi-title><navi-desc>將一些製作失敗效果不好而丟棄的酒精爐移駕至此。</navi-desc></a>" +
+		"    <a href=\"alcoholstove_stand.html\"><navi-title><fire_f></fire_f>爐架</navi-title><navi-desc>酒精爐沒設計自帶爐架的話，都需要額外的爐架。</navi-desc></a>" +
+		"    <a href=\"alcoholstove_windscreen.html\"><navi-title><fire_f></fire_f>擋風板</navi-title><navi-desc>酒精爐非常容易受風影響，擋風板可以避免熱源過度散失。</navi-desc></a>" +
+		"    <a href=\"alcoholstove_material.html\"><navi-title><fire_f></fire_f>爐心材料測試</navi-title><navi-desc>吸附式酒精爐（如防火綿酒精爐），填充的爐心使用不同吸附材質的比較。</navi-desc></a>" +
+		"    <a href=\"alcoholstove_spinoff.html\"><navi-title><fire_f></fire_f>番外篇</navi-title><navi-desc>一些固態燃料測試之類的。</navi-desc></a>" +
+		"  </div>" 
 	);
 }
 
@@ -103,16 +119,24 @@ function WriteAlcoholStoveNavigator()
 function WriteULNavigator()
 {
 	WriteHTML("ul_navigator",
-		"<div class=\"graybox autofit\" align=\"left\">	"
-		+"	<h3 class=\"tab\">輕量化登山</h3>"
-		+"	<ul>"
-		+"		<li><a href=\"ul_tent.html\">阿前的帳篷</a></li>"
-		+"		<li><a href=\"ul_backpack.html\">阿前的登山包</a></li>"
-		+"	</ul>"
+		"<div class=\"graybox\" align=\"left\">	"
+		+" <h3 class=\"tab\">輕量化登山</h3>"
+		+"  <div class=\"naviGrid\">" 
+		+"    <a href=\"ul_tent.html\"><mountain></mountain>阿前的帳篷</a>"
+		+"    <a href=\"ul_backpack.html\"><mountain></mountain>阿前的登山包</a>"
+		+"  </div>"
 		+"</div>"
 	);
 }
-
+function WriteULNavigatorLarge()
+{
+	WriteHTML("ulnavigator_large",
+		"  <div class=\"naviGridLarge\">"
+		+"    <a href=\"ul_tent.html\"><navi-title><mountain></mountain>阿前的帳篷</navi-title><navi-desc>介紹阿前登山一路上使用的帳篷。</navi-desc></a>"
+		+"    <a href=\"ul_backpack.html\"><navi-title><mountain></mountain>阿前的登山包</navi-title><navi-desc>包包的體積與重量很大程度影響整體背負的重量。</navi-desc></a>"
+		+"  </div>"
+	);
+}
 
 
 function ToggleArrowButton()
