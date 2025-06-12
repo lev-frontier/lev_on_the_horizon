@@ -101,7 +101,7 @@ function WriteAlcoholStoveNavigator() {
 function WriteAlcoholStoveNavigatorLarge() {
 	WriteHTML("alcoholstovenavigator_large",
 		"  <div class=\"naviGridLarge\">" +
-		"    <a href=\"alcoholstove_intro.html\"><navi-title><fire_f></fire_f>介紹</navi-title><navi-desc>介紹酒精爐優缺、注意事項。</navi-desc></a>" +
+		"    <a href=\"alcoholstove_intro.html\"><navi-title><fire_f></fire_f>介紹</navi-title><navi-desc>輕量化到不知道還可以輕什麼？來玩酒精爐吧！</navi-desc></a>" +
 		"    <a href=\"alcoholstove_effectivity.html\"><navi-title><fire_f></fire_f>對比高山瓦斯爐效益</navi-title><navi-desc>比較酒精爐在重量上的優勢，以及講講高山瓦斯爐的不可取代性。</navi-desc></a>" +
 		"    <a href=\"alcoholstove_warning.html\"><navi-title><warningicon></warningicon>警告！！！</navi-title><navi-desc>談論使用酒精爐的一些細節所導致的危險性。</navi-desc></a>" +
 		"    <a href=\"alcoholstove_type.html\"><navi-title><fire_f></fire_f>酒精爐類型</navi-title><navi-desc>介紹幾種不同類型的酒精爐燃燒的原理。</navi-desc></a>" +

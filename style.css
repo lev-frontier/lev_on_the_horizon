@@ -389,7 +389,15 @@ h2 fire_f
 
 .box
 {
-	background-color: #C0E090;
+	background-color: #c0dbb1;
+	border-radius : 16px;
+	margin: 16px 2px;
+	padding: 8px 16px;
+}
+
+.oldbox
+{
+	background-color: #cfcda8;
 	border-radius : 16px;
 	margin: 16px 2px;
 	padding: 8px 16px;
