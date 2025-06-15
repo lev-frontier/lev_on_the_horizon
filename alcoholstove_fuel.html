@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Lev on the horizon</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="navigator.js"></script> 
+</head>
+
+<body>
+	<div id="header"></div><script>WriteHeader();</script>
+	<hr>
+	<div align="center"><div class="content">
+		<div id="alcoholstovenavigator"></div><script>WriteAlcoholStoveNavigator();</script>
+		<hr>
+		
+		<h2 class="fire_icon_title">燃料</h2>
+		<p>酒精爐可以燃燒不同種類的酒精，甲醇、乙醇、異丙醇，要融合這些燃料甚至加入其他材料製作焰色反應也可以。</p>
+		
+		<div class="warningbox"><tipicon></tipicon>注意調製燃料需在通風無火源處，並且避免靜電產生，以免發生火災。</div>
+		
+		<div class="graybox autofit" align="left" id="sectionIndex">	
+			<h3 class="tab">索引</h3>
+			<ul id="toc">
+				<!-- JavaScript 會自動填充索引 -->
+			</ul>
+		</div>
+		<hr>
+		
+		<div class="box" data-section="甲醇">		
+			<h3>甲醇</h3>
+			<p>就是工業酒精，五金行那種粉紅色加了染色劑的也是，化工行可以買到透明的，一般會說可以用在酒精燈煮食。</p>
+			<p>揮發快，燃燒點火快速，但熱值稍低，相比乙醇可能需要更多量才能燒開水。</p>
+			<p>有毒，燃燒不完全會產生刺鼻刺激眼睛的煙霧，高山上氧氣較少更是容易燃燒不完全，不建議使用純甲醇來燃燒。</p>
+			<p>拿來混合乙醇或焰色反應溶液的話佔比10%以下幫助點火即可。</p>
+			<p>一般來說明亮處燃燒幾乎看不見火焰，黑暗處燒起來為藍色火焰，幾乎不太燒黑鍋底。</p>
+		</div>
+		<div align="center"><a href="#sectionIndex">△回到索引</a></div>	
+		
+		<div class="box" data-section="乙醇">		
+			<h3>乙醇</h3>
+			<p>最推薦燃燒的燃料，一般化工行賣的幾乎都有加苦味劑不能喝。</p>
+			<p>95%乙醇易燃，適用於多數酒精爐。</p>
+			<p>一般消毒酒精使用75%乙醇與25%水混合，使用75%酒精燃燒較溫和，燃燒時間較延長，但要注意算酒精比例，避免燒不開水。</p>
+			<p>燃燒顏色依據爐具與距離鍋面高低等有差異，好的酒精爐與爐架搭配等等燃燒起來會是藍色火焰，爐具火力太強燃燒太旺，或是使用吸附材質燃燒（如陶瓷纖維）則容易產生黃火，黃火容易黑鍋。</p>
+		</div>
+		<div align="center"><a href="#sectionIndex">△回到索引</a></div>	
+		
+		<div class="box" data-section="異丙醇">		
+			<h3>異丙醇</h3>
+			<p>最不推薦燃料，除非爐具有經過設計，可以參考<a href="alcoholstove_current.html?goto=罐頭酒精爐%20(墊高可燒異丙醇)">罐頭酒精爐 (墊高可燒異丙醇)</a>。</p>
+			<p>一些乾洗手也是混異丙醇消毒。</p>
+			<p>燃燒除非進氣順暢，空氣燃燒非常完全，且爐面距離鍋底高度有設計過有機會產生藍火，不然幾乎就是黃火黑鍋。不想刷鍋子就不要想用異丙醇燒。</p>
+		</div>
+		<div align="center"><a href="#sectionIndex">△回到索引</a></div>	
+		
+		<div class="box" data-section="綠焰精靈">		
+			<h3>綠焰精靈</h3>
+			<p>為了讓火焰增添色彩，增加火焰存在感與兼具美觀性，並且還要燒起來低毒性，決定使用硼酸調製燃料。</p>
+			
+			<h4>配方</h4>
+			<p>80%乙醇、5%甲醇、15%硼酸水溶液體。</p>
+			
+			<h4>硼酸水溶液體調製</h4>
+			<p>使用50度溫水以50ml水對比3公克硼酸，攪拌到不能再溶解，變成硼酸飽和水溶液，然後等待完全降溫才可進行酒精混合。</p>
+			
+			<h4>實際燃燒</h4>			
+			<p>此次燃燒燃料比例調配為80%乙醇、10%甲醇、10%硼酸水溶液體，甲醇比例太高揮發太高火焰暴衝，後續調整拉高硼酸水溶液比例。</p>
+			<p>燒起來為藍綠色火焰，非常好看。火焰較高時，綠色的部分會比較明顯。</p>
+			<img loading="lazy" class="stoveimg lazy-img" src="images/stove/small/46C.jpg" width="512"/>
+			<img loading="lazy" class="stoveimg lazy-img" src="images/stove/small/46D.jpg" width="512"/>
+			<img loading="lazy" class="stoveimg lazy-img" src="images/fuel/small/01A.jpg" width="512"/>
+			<img loading="lazy" class="stoveimg lazy-img" src="images/fuel/small/01B.jpg" width="512"/>
+			
+			<div class="warningbox">
+				<h4><tipicon></tipicon>注意事項</h4>
+				<p>硼酸還是有些毒性，燒水務必蓋上鍋蓋，避免含硼酸的蒸氣滲入，燃燒後鍋壁可能會有白色硼酸結晶，請注意不要碰到食物，並且徹底清潔鍋子。</p>
+			</div>
+		</div>
+		<div align="center"><a href="#sectionIndex">△回到索引</a></div>	
+		
+		<div class="box" data-section="低鈉鹽溶液測試（失敗案例）">		
+			<h3>低鈉鹽溶液測試（失敗案例）</h3>
+			<p>加入鹽巴是讓火焰最簡單產生明亮橘黃色的最簡易方法，低鈉鹽帶有鉀離子會讓火焰偏紅。</p>
+						
+			<p>使用50度溫水以50ml水對比16公克鹽巴，加太多了全部都是漂浮物，沒有等它沉澱就混合酒精，大事不妙。</p>	
+			<p>此次燃燒燃料比例調配為70%乙醇、10%甲醇、20%低鈉鹽水溶液體。</p>	
+			<p>低鈉鹽水溶液全部沉澱到底部（酒精較輕）。</p>	
+			<img loading="lazy" class="stoveimg lazy-img" src="images/fuel/small/02B.jpg" width="512"/>
+			
+			<p>燃燒前搖一搖才燒，燒起來為肉眼看偏橘紅色(相機拍攝都偏黃，照片已經調色到接近肉眼顏色)。</p>
+			<img loading="lazy" class="stoveimg lazy-img" src="images/fuel/small/02A.jpg" width="512"/>
+			
+			<p>食鹽太多的下場，爐具底部與孔洞皆有食鹽結晶，長期下來會造成堵塞，鹽巴比例應該要拉到極低比較好。</p>
+			<img loading="lazy" class="stoveimg lazy-img" src="images/fuel/small/02C.jpg" width="512"/>
+		</div>
+		<div align="center"><a href="#sectionIndex">△回到索引</a></div>	
+
+	</div></div>
+	<hr>
+
+	<div id="alcoholstovenavigator"></div>	
+	<div id="footer"></div><script>WriteFooter();</script>
+	<script>ReplaceRatingStar();</script>
+	<script src="lazyload.js"></script>
+	<script src="data-section.js"></script>
+	<script src="goto.js"></script>
+</body>
+</html>
