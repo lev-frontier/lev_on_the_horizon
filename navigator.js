@@ -101,16 +101,16 @@ function WriteAlcoholStoveNavigator() {
 function WriteAlcoholStoveNavigatorLarge() {
 	WriteHTML("alcoholstovenavigator_large",
 		"  <div class=\"naviGridLarge\">" +
-		"    <a href=\"alcoholstove_intro.html\"><navi-title><fire_f></fire_f>介紹</navi-title><navi-desc>輕量化到不知道還可以輕什麼？來玩酒精爐吧！</navi-desc></a>" +
-		"    <a href=\"alcoholstove_effectivity.html\"><navi-title><fire_f></fire_f>對比高山瓦斯爐效益</navi-title><navi-desc>比較酒精爐在重量上的優勢，以及講講高山瓦斯爐的不可取代性。</navi-desc></a>" +
-		"    <a href=\"alcoholstove_warning.html\"><navi-title><warningicon></warningicon>警告！！！</navi-title><navi-desc>談論使用酒精爐的一些細節所導致的危險性。</navi-desc></a>" +
-		"    <a href=\"alcoholstove_type.html\"><navi-title><fire_f></fire_f>酒精爐類型</navi-title><navi-desc>介紹幾種不同類型的酒精爐燃燒的原理。</navi-desc></a>" +
-		"    <a href=\"alcoholstove_current.html\"><navi-title><fire_f></fire_f>現役酒精爐</navi-title><navi-desc>介紹阿前購買與DIY自製的酒精爐。</navi-desc></a>" +
-		"    <a href=\"alcoholstove_dispose.html\"><navi-title><fire_f></fire_f>已丟棄的酒精爐</navi-title><navi-desc>將一些製作失敗效果不好而丟棄的酒精爐移駕至此。</navi-desc></a>" +
-		"    <a href=\"alcoholstove_stand.html\"><navi-title><fire_f></fire_f>爐架</navi-title><navi-desc>酒精爐沒設計自帶爐架的話，都需要額外的爐架。</navi-desc></a>" +
-		"    <a href=\"alcoholstove_windscreen.html\"><navi-title><fire_f></fire_f>擋風板</navi-title><navi-desc>酒精爐非常容易受風影響，擋風板可以避免熱源過度散失。</navi-desc></a>" +
-		"    <a href=\"alcoholstove_material.html\"><navi-title><fire_f></fire_f>爐心材料測試</navi-title><navi-desc>吸附式酒精爐（如防火綿酒精爐），填充的爐心使用不同吸附材質的比較。</navi-desc></a>" +
-		"    <a href=\"alcoholstove_spinoff.html\"><navi-title><fire_f></fire_f>番外篇</navi-title><navi-desc>一些固態燃料測試之類的。</navi-desc></a>" +
+		"    <a href=\"alcoholstove_intro.html\">		<navi-thumb style=\"background-image: url('images/introdution/thumb.jpg');\"></navi-thumb><navi-card><navi-title><fire_f></fire_f>介紹</navi-title><navi-desc>輕量化到不知道還可以輕什麼？來玩酒精爐吧！</navi-desc></navi-card></a>" +
+		"    <a href=\"alcoholstove_effectivity.html\">	<navi-thumb style=\"background-image: url('images/effectivity/thumb.jpg');\"></navi-thumb><navi-card><navi-title><fire_f></fire_f>對比高山瓦斯爐效益</navi-title><navi-desc>比較酒精爐在重量上的優勢，以及講講高山瓦斯爐的不可取代性。</navi-desc></navi-card></a>" +
+		"    <a href=\"alcoholstove_warning.html\">		<navi-thumb style=\"background-image: url('images/warning/thumb.jpg');\"></navi-thumb><navi-card><navi-title><warningicon></warningicon>警告！！！</navi-title><navi-desc>談論使用酒精爐的一些細節所導致的危險性。</navi-desc></navi-card></a>" +
+		"    <a href=\"alcoholstove_type.html\">		<navi-thumb style=\"background-image: url('images/stovetype/thumb.jpg');\"></navi-thumb><navi-card><navi-title><fire_f></fire_f>酒精爐類型</navi-title><navi-desc>介紹幾種不同類型的酒精爐燃燒的原理。</navi-desc></navi-card></a>" +
+		"    <a href=\"alcoholstove_current.html\">		<navi-thumb style=\"background-image: url('images/stove/thumb.gif');\"></navi-thumb><navi-card><navi-title><fire_f></fire_f>現役酒精爐</navi-title><navi-desc>介紹阿前購買與DIY自製的酒精爐。</navi-desc></navi-card></a>" +
+		"    <a href=\"alcoholstove_dispose.html\">		<navi-thumb style=\"background-image: url('images/stove/thumb_discard.jpg');\"></navi-thumb><navi-card><navi-title><fire_f></fire_f>已丟棄的酒精爐</navi-title><navi-desc>將一些製作失敗效果不好而丟棄的酒精爐移駕至此。</navi-desc></navi-card></a>" +
+		"    <a href=\"alcoholstove_stand.html\">		<navi-thumb style=\"background-image: url('images/stovestand/thumb.gif');\"></navi-thumb><navi-card><navi-title><fire_f></fire_f>爐架</navi-title><navi-desc>酒精爐沒設計自帶爐架的話，都需要額外的爐架。</navi-desc></navi-card></a>" +
+		"    <a href=\"alcoholstove_windscreen.html\">	<navi-thumb style=\"background-image: url('images/windscreen/thumb.gif');\"></navi-thumb><navi-card><navi-title><fire_f></fire_f>擋風板</navi-title><navi-desc>酒精爐非常容易受風影響，擋風板可以避免熱源過度散失。</navi-desc></navi-card></a>" +
+		"    <a href=\"alcoholstove_material.html\">	<navi-thumb style=\"background-image: url('images/material/thumb.jpg');\"></navi-thumb><navi-card><navi-title><fire_f></fire_f>爐心材料測試</navi-title><navi-desc>吸附式酒精爐（如防火綿酒精爐），填充的爐心使用不同吸附材質的比較。</navi-desc></navi-card></a>" +
+		"    <a href=\"alcoholstove_spinoff.html\">		<navi-thumb style=\"background-image: url('images/solidfuelstove/thumb.jpg');\"></navi-thumb><navi-card><navi-title><fire_f></fire_f>番外篇</navi-title><navi-desc>一些固態燃料測試之類的。</navi-desc></navi-card></a>" +
 		"  </div>" 
 	);
 }
@@ -132,8 +132,8 @@ function WriteULNavigatorLarge()
 {
 	WriteHTML("ulnavigator_large",
 		"  <div class=\"naviGridLarge\">"
-		+"    <a href=\"ul_tent.html\"><navi-title><mountain></mountain>阿前的帳篷</navi-title><navi-desc>介紹阿前登山一路上使用的帳篷。</navi-desc></a>"
-		+"    <a href=\"ul_backpack.html\"><navi-title><mountain></mountain>阿前的登山包</navi-title><navi-desc>包包的體積與重量很大程度影響整體背負的重量。</navi-desc></a>"
+		+"    <a href=\"ul_tent.html\">			<navi-thumb style=\"background-image: url('images/tent/thumb.jpg');\"></navi-thumb><navi-card><navi-title><mountain></mountain>阿前的帳篷</navi-title><navi-desc>介紹阿前登山一路上使用的帳篷。</navi-desc></navi-card></a>"
+		+"    <a href=\"ul_backpack.html\">		<navi-thumb style=\"background-image: url('images/backpack/thumb.jpg');\"></navi-thumb><navi-card><navi-title><mountain></mountain>阿前的登山包</navi-title><navi-desc>包包的體積與重量很大程度影響整體背負的重量。</navi-desc></navi-card></a>"
 		+"  </div>"
 	);
 }

@@ -344,10 +344,31 @@ h2 fire_f
   gap: 4px;
 }
 
+/*
+.naviGridLarge a {
+  flex: 0 0 calc(50% - 6px);;                 // 大尺寸卡片 
+  display: flex;
+  flex-direction: column;          //上下排列內容 
+  justify-content: center;
+  padding: 12px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-decoration: none;
+  color: black;
+  box-sizing: border-box;
+  height: 100px;
+  transition: background-color 0.2s;
+}
+*/
+
 .naviGridLarge a {
   flex: 0 0 calc(50% - 6px);;                  /* 大尺寸卡片 */
   display: flex;
-  flex-direction: column;          /* 上下排列內容 */
+  //flex-direction: column;          /* 上下排列內容 */
+  flex-direction: row; /* 原本是 column，改成 row */
+  align-items: center; /* ✅ 重點：垂直置中 */
+  gap: 12px;
   justify-content: center;
   padding: 12px;
   background-color: #f8f8f8;
@@ -362,6 +383,24 @@ h2 fire_f
 
 .naviGridLarge a:hover {
   background-color: #eaeaea;
+}
+
+.naviGridLarge navi-thumb {
+	display: block;
+	width: 48px;
+	height: 48px;
+	background-size: cover;
+	background-position: center;
+	border-radius: 6px;
+	flex-shrink: 0;
+}
+
+.naviGridLarge navi-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 垂直置中對齊 */
+  flex: 1; /* 讓文字區自動填滿剩餘空間 */
+  min-width: 0; /* 防止 flex overflow */
 }
 
 .naviGridLarge navi-title {
