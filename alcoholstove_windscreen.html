@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Lev on the horizon</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="navigator.js"></script> 
-</head>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Lev on the horizon</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="navigator.js"></script> 
+	</head>
 
-<body>
-	<div id="header"></div><script>WriteHeader();</script>
-	<hr>
-	<div align="center"><div class="content">
+	<body>
+		<div id="goto-overlay" class="hidden"><div id="goto-text"></div></div><script src="goto-overlay.js"></script>
+		<div id="header"></div><script>WriteHeader();</script>
+		<hr>
+		<div align="center"><div class="content">
 		<div id="alcoholstovenavigator"></div><script>WriteAlcoholStoveNavigator();</script>
 		<hr>
 		
@@ -81,6 +82,5 @@
 	<script>ReplaceRatingStar();</script>
 	<script src="lazyload.js"></script>
 	<script src="data-section.js"></script>	
-	<script src="goto.js"></script>
 </body>
 </html>

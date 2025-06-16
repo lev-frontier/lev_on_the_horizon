@@ -9,6 +9,7 @@
 </head>
 
 <body>
+	<div id="goto-overlay" class="hidden"><div id="goto-text"></div></div><script src="goto-overlay.js"></script>
 	<div id="header"></div><script>WriteHeader();</script>
 	<hr>
 	<div align="center"><div class="content"> <!-- BEGIN 內容置中排版 -->
@@ -197,18 +198,6 @@
 		<div align="center"><a href="#sectionIndex">△回到索引</a></div>
 		
 		
-		<div class="box" align="left" data-section="伯朗240ML陶瓷纖維加壓酒精爐">		
-			<h3>伯朗240ML陶瓷纖維加壓酒精爐 <span class="tealbox tag">#雙層吸附</span> <span class="bluebox tag">重量15g</span> <span class="greenbox tag">DIY</span> <span class="rating">★★★*☆</span></h3>
-			
-			<p>一般雙層加壓爐需要等待酒精在夾層中氣化後產生壓力噴出，此款在夾層中心放置陶瓷纖維，直接將酒精完全吸附至夾層中，啟動可後在夾層內快速加壓，火焰爆發出來，聽得到火焰噴發的氣流聲音。</p>
-			<p>但缺點顯而易見就是火力消耗較快，還有因為陶瓷纖維會吸附太多的酒精。初始酒精量必須大於20ml，爐子中心才有殘餘酒精可以做預熱的動作，但一旦啟動完成後，火焰的高壓就算直接將鍋或杯子疊在上方也不會使火焰熄滅。</p>
-			<p>
-				<img loading="lazy" class="stoveimg lazy-img" src="images/stove/small/25.jpg" width="512"/>
-				<img loading="lazy" class="stoveimg lazy-img" src="images/stove/small/25X.jpg" width="512"/>
-			</p>
-		</div>
-		<div align="center"><a href="#sectionIndex">△回到索引</a></div>
-		
 		<div class="box" align="left" data-section="IonStove III">		
 			<h3>IonStove III <span class="tealbox tag">#開放式</span> <span class="bluebox tag">重量19g</span> <span class="greenbox tag">DIY</span> <span class="rating">★★★*☆</span></h3>
 			
@@ -217,7 +206,7 @@
 			<p>牛奶花生的罐的尺寸有個微小的差異，雖然外表看不出來但其實比汽水罐還要小一點，但卻又可以完全緊密接合，之後如果要做其他平底酒精爐也可以考慮搭配使用。</p>
 			<p>偷懶透過直接燃燒爐體外表以方便刷掉漆面，鐵罐與鋁罐呈現截然不同的顏色，但燒完真的很臭，連爐體都散發臭味，感覺超有毒。</p>
 			<p><img loading="lazy" class="stoveimg lazy-img" src="images/stove/small/27.jpg" width="512"/></p>
-			<p>燃燒使用<a href="alcoholstove_stand.html?goto=X型爐架">X型爐架</a>，因開口較小，加上爐體主要為鐵罐材質，要達到工作溫度比鋁罐慢，燒起來後火焰幾乎限制在一個小區域，不像前一個重製版本<a href="alcoholstove_dispose.html?goto=IonStove%20II">IonStove II</a>一樣向外噴發。</p>
+			<p>燃燒使用<a href="alcoholstove_stand.html?goto=鋁罐X型爐架">鋁罐X型爐架</a>，因開口較小，加上爐體主要為鐵罐材質，要達到工作溫度比鋁罐慢，燒起來後火焰幾乎限制在一個小區域，不像前一個重製版本<a href="alcoholstove_dispose.html?goto=IonStove%20II">IonStove II</a>一樣向外噴發。</p>
 			<p>
 				<img loading="lazy" class="stoveimg lazy-img" src="images/stove/small/27A.jpg" width="512"/>
 				<img loading="lazy" class="stoveimg lazy-img" src="images/stove/small/27B.jpg" width="512"/>
@@ -286,7 +275,7 @@
 		<div class="box" align="left" data-section="魔爪側燒酒精爐">		
 			<h3>魔爪側燒酒精爐 <span class="tealbox tag">#套筒式</span> <span class="bluebox tag">重量8g</span> <span class="greenbox tag">DIY</span> <span class="rating">★★★★☆</span></h3>
 			
-			<p><a href="#雪碧330ML側燒酒精爐">雪碧330ML側燒酒精爐</a>的魔爪版本，跟<a href="#咕嚕康普茶側燒酒精爐">咕嚕康普茶側燒酒精爐</a>一樣也是會快速點燃的類型，要馬上將鍋子架上去。</p>
+			<p><a href="alcoholstove_dispose.html?goto=雪碧330ML側燒酒精爐">雪碧330ML側燒酒精爐</a>的魔爪版本，跟<a href="#咕嚕康普茶側燒酒精爐">咕嚕康普茶側燒酒精爐</a>一樣也是會快速點燃的類型，要馬上將鍋子架上去。</p>
 			<p>
 				<img loading="lazy" class="stoveimg lazy-img" src="images/stove/small/33.jpg" width="512"/>
 				<img loading="lazy" class="stoveimg lazy-img" src="images/stove/small/33A.jpg" width="512"/>
@@ -481,7 +470,22 @@
 		</div>
 		<div align="center"><a href="#sectionIndex">△回到索引</a></div>
 		
-
+		<div class="box" align="left" data-section="伯朗拿鐵240ML不織布酒精爐">		
+			<h3>伯朗拿鐵240ML不織布酒精爐 <span class="tealbox tag">#雙層吸附</span> <span class="bluebox tag">重量15g</span> <span class="greenbox tag">DIY</span> <span class="rating">★★★*☆</span></h3>
+			
+			<p><a href="alcoholstove_dispose.html?goto=伯朗240ML陶瓷纖維加壓酒精爐">伯朗240ML陶瓷纖維加壓酒精爐</a>的精緻重製板，改用不織布當作吸附材質。</p>
+			<p>使用伯朗拿鐵的罐子，外觀的金邊裝飾剛好對應12個洞，內圈使用咕嚕康普茶當作內壁，並包圍不織布吸附酒精加速啟動。</p>
+			<p><img loading="lazy" class="stoveimg lazy-img" src="images/stove/small/47.jpg" width="512"/></p>
+			<p>因為距離打孔太高，距離鍋底過近，且不織布吸附好似沒有陶瓷纖維般明顯加壓效果，不像前一版可以直接疊鍋具上去。</p>
+			<p>火焰向外發散，應該要用更大的鍋面，才會更有燃燒效益。</p>
+			<p>
+				
+				<img loading="lazy" class="stoveimg lazy-img" src="images/stove/small/47A.jpg" width="512"/>
+				<img loading="lazy" class="stoveimg lazy-img" src="images/stove/small/47B.jpg" width="512"/>
+			</p>			
+			<p>使用甲醇30ml可燒開500ml的水，約7分多鐘水滾。</p>
+		</div>
+		<div align="center"><a href="#sectionIndex">△回到索引</a></div>
 
 	</div></div> <!-- END 內容置中排版 -->
 	<hr>
@@ -489,6 +493,5 @@
 	<script>ReplaceRatingStar();</script>
 	<script src="lazyload.js"></script>
 	<script src="data-section.js"></script>
-	<script src="goto.js"></script>
 </body>
 </html>

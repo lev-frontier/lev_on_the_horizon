@@ -1,3 +1,4 @@
+
 function WriteHTML(elementId, innerHTML)
 {
 	var element = document.getElementById(elementId);

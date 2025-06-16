@@ -1,3 +1,46 @@
+#goto-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  user-select: none;
+
+  opacity: 1;
+  pointer-events: auto;
+
+  /* 初始沒有 transition，避免淡入 */
+  transition: none;
+}
+
+/* 隱藏時加上淡出效果 */
+#goto-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+
+  /* 只有隱藏時才啟用 transition 做淡出 */
+  transition: opacity 1s ease;
+}
+#goto-text {
+  font-weight: 700;
+  font-family: 'Microsoft JhengHei', '黑體', 'Noto Sans TC', sans-serif;
+  color: black;
+
+  background-color: rgba(255, 255, 255, 1);
+  padding: 12px 24px;
+  border-radius: 8px;
+
+  user-select: text;
+  max-width: 80vw;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+
+
 h1
 {
 	font-family:monospace, Sans-Serif, Consolas;
