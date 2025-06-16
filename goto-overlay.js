@@ -92,7 +92,7 @@ function scrollToSectionFromUrl() {
 		scrollToSectionFromUrl();
 		setTimeout(() => {
           hideGotoOverlay();
-        }, 200);
+        }, 300);
 	});
   }
 })();
