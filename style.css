@@ -40,7 +40,6 @@
 }
 
 
-
 h1
 {
 	font-family:monospace, Sans-Serif, Consolas;
@@ -335,15 +334,12 @@ h2 fire_f
 	transform: translateY(-3px);
 }
 
-.tag
+space
 {
 	display: inline-block;
-	white-space: nowrap;
-}
-
-.block
-{
-	display: inline-block;
+	width: 1em;       /* 寬度等於一個字的寬度 */
+	height: 1em;      /* 高度等於字體大小 */
+	vertical-align: middle; /* 或 text-bottom，看排版需要 */
 }
 
 /*------------------------------------------------------------------*/
@@ -467,10 +463,6 @@ h2 fire_f
 }
 
 /*------------------------------------------------------------------*/
-.uniform_padding
-{
-	padding: 8px;
-}
 
 
 /*------------------------------------------------------------------*/
@@ -521,6 +513,14 @@ h2 fire_f
 .bluebox
 {
 	background-color: #80CFFF;
+	border-radius : 4px;
+	padding: 2px;
+	margin: 2px;
+}
+
+.lightbluebox
+{
+	background-color: #B9E9FF;
 	border-radius : 4px;
 	padding: 2px;
 	margin: 2px;
@@ -602,16 +602,6 @@ h2 fire_f
 }
 
 
-.autofit
-{
-	display: inline-block;
-}
-
-
-.tab
-{
-	margin-left: 8px;	
-}
 
 .formbox
 {
@@ -682,4 +672,45 @@ h2 fire_f
 .collapsible.expanded {
   max-height: 2000px; /* 估一個夠大的值即可，或改用 JS scrollHeight */
   padding: 1em;
+}
+
+
+/* ============================================================================================= */
+/* 最後修飾用 */
+
+
+.tag
+{
+	display: inline-block;
+	white-space: nowrap;
+}
+
+.block
+{
+	display: inline-block;
+}
+
+.autofit
+{
+	display: inline-block;
+}
+
+.tab
+{
+	margin-left: 8px;	
+}
+
+.smallfont
+{
+	font-size: 0.8em;
+}
+
+.monofont
+{
+	font-family: Menlo, Monaco,  Consolas, monospace;
+}
+
+.uniform_padding
+{
+	padding: 8px;
 }
