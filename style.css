@@ -346,7 +346,6 @@ space
 specification
 {
 	display: inline-block;
-	white-space: nowrap;
 	font-family: Menlo, Monaco,  Consolas, monospace;	
 	background-color: #80CFFF;
 	border-radius : 4px;
