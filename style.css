@@ -342,6 +342,19 @@ space
 	vertical-align: middle; /* 或 text-bottom，看排版需要 */
 }
 
+
+specification
+{
+	display: inline-block;
+	white-space: nowrap;
+	font-family: Menlo, Monaco,  Consolas, monospace;	
+	background-color: #80CFFF;
+	border-radius : 4px;
+	padding: 4px;
+	margin: 4px;
+}
+
+
 /*------------------------------------------------------------------*/
 .naviGrid {
   display: flex;
