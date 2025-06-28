@@ -93,6 +93,7 @@ function WriteAlcoholStoveNavigator() {
 		"    <a href=\"alcoholstove_stand.html\"><fire_f></fire_f>爐架</a>" +
 		"    <a href=\"alcoholstove_windscreen.html\"><fire_f></fire_f>擋風板</a>" +
 		"    <a href=\"alcoholstove_fuel.html\"><fire_f></fire_f>燃料</a>" +
+		"    <a href=\"alcoholstove_ignition.html\"><fire_f></fire_f>點火方式</a>" +
 		"    <a href=\"alcoholstove_material.html\"><fire_f></fire_f>爐心材料測試</a>" +
 		"    <a href=\"alcoholstove_spinoff.html\"><fire_f></fire_f>番外篇</a>" +
 		"  </div>" +
@@ -112,6 +113,7 @@ function WriteAlcoholStoveNavigatorLarge() {
 		"    <a href=\"alcoholstove_stand.html\">		<navi-thumb style=\"background-image: url('images/stovestand/thumb.gif');\"></navi-thumb><navi-card><navi-title><fire_f></fire_f>爐架</navi-title><navi-desc>酒精爐沒設計自帶爐架的話，都需要額外的爐架。</navi-desc></navi-card></a>" +
 		"    <a href=\"alcoholstove_windscreen.html\">	<navi-thumb style=\"background-image: url('images/windscreen/thumb.gif');\"></navi-thumb><navi-card><navi-title><fire_f></fire_f>擋風板</navi-title><navi-desc>酒精爐非常容易受風影響，擋風板可以避免熱源過度散失。</navi-desc></navi-card></a>" +
 		"    <a href=\"alcoholstove_fuel.html\">	<navi-thumb style=\"background-image: url('images/fuel/thumb.jpg');\"></navi-thumb><navi-card><navi-title><fire_f></fire_f>燃料</navi-title><navi-desc>不同類型酒精燃料的比較，與混合燃料、焰色反應實驗。</navi-desc></navi-card></a>" +
+		"    <a href=\"alcoholstove_ignition.html\">	<navi-thumb style=\"background-image: url('images/fire_e.svg');\"></navi-thumb><navi-card><navi-title><fire_f></fire_f>點火方式</navi-title><navi-desc>酒精在低溫或缺氧狀態下如何增加點燃的成功率。</navi-desc></navi-card></a>" +
 		"    <a href=\"alcoholstove_material.html\">	<navi-thumb style=\"background-image: url('images/material/thumb.jpg');\"></navi-thumb><navi-card><navi-title><fire_f></fire_f>爐心材料測試</navi-title><navi-desc>吸附式酒精爐（如防火綿酒精爐），填充的爐心使用不同吸附材質的比較。</navi-desc></navi-card></a>" +
 		"    <a href=\"alcoholstove_spinoff.html\">		<navi-thumb style=\"background-image: url('images/solidfuelstove/thumb.jpg');\"></navi-thumb><navi-card><navi-title><fire_f></fire_f>番外篇</navi-title><navi-desc>一些固態燃料測試之類的。</navi-desc></navi-card></a>" +
 		"  </div>" 
