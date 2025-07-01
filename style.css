@@ -334,6 +334,13 @@ h2 fire_f
 	transform: translateY(-3px);
 }
 
+redheart::before {
+	content: "\2764\FE0F"; /* Unicode ❤️ */
+	color: red;
+	font-size: 1em; /* 可依需求調整大小 */
+	display: inline-block;
+}
+
 space
 {
 	display: inline-block;

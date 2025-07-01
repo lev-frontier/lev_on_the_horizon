@@ -78,96 +78,199 @@ function ReplaceRatingStar()
 	});
 }
 
+// 🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+
+const alcoholStoveNavItems = [
+	{
+		href: "alcoholstove_intro.html",
+		icon: "<fire_f></fire_f>",
+		label: "介紹",
+		desc: "輕量化到不知道還可以輕什麼？來玩酒精爐吧！",
+		thumb: "images/introdution/thumb.jpg"
+	},
+	{
+		href: "alcoholstove_effectivity.html",
+		icon: "<fire_f></fire_f>",
+		label: "對比高山瓦斯爐效益",
+		desc: "比較酒精爐在重量上的優勢，以及講講高山瓦斯爐的不可取代性。",
+		thumb: "images/effectivity/thumb.jpg"
+	},
+	{
+		href: "alcoholstove_warning.html",
+		icon: "<warningicon></warningicon>",
+		label: "警告！！！",
+		desc: "談論使用酒精爐的一些細節所導致的危險性。",
+		thumb: "images/warning/thumb.jpg"
+	},
+	{
+		href: "alcoholstove_type.html",
+		icon: "<fire_f></fire_f>",
+		label: "酒精爐類型",
+		desc: "介紹幾種不同類型的酒精爐燃燒的原理。",
+		thumb: "images/stovetype/thumb.jpg"
+	},
+	{
+		href: "alcoholstove_current.html",
+		icon: "<fire_f></fire_f>",
+		label: "現役酒精爐",
+		desc: "介紹阿前購買與DIY自製的酒精爐。",
+		thumb: "images/stove/thumb.gif"
+	},
+	{
+		href: "alcoholstove_dispose.html",
+		icon: "<fire_f></fire_f>",
+		label: "已丟棄的酒精爐",
+		desc: "將一些製作失敗效果不好而丟棄的酒精爐移駕至此。",
+		thumb: "images/stove/thumb_discard.jpg"
+	},
+	{
+		href: "alcoholstove_stand.html",
+		icon: "<fire_f></fire_f>",
+		label: "爐架",
+		desc: "酒精爐沒設計自帶爐架的話，都需要額外的爐架。",
+		thumb: "images/stovestand/thumb.gif"
+	},
+	{
+		href: "alcoholstove_windscreen.html",
+		icon: "<fire_f></fire_f>",
+		label: "擋風板",
+		desc: "酒精爐非常容易受風影響，擋風板可以避免熱源過度散失。",
+		thumb: "images/windscreen/thumb.gif"
+	},
+	{
+		href: "alcoholstove_fuel.html",
+		icon: "<fire_f></fire_f>",
+		label: "燃料",
+		desc: "不同類型酒精燃料的比較，與混合燃料、焰色反應實驗。",
+		thumb: "images/fuel/thumb.jpg"
+	},
+	{
+		href: "alcoholstove_ignition.html",
+		icon: "<fire_f></fire_f>",
+		label: "點火方式",
+		desc: "酒精在低溫或缺氧狀態下如何增加點燃的成功率。",
+		thumb: "images/fire_e.svg"
+	},
+	{
+		href: "alcoholstove_material.html",
+		icon: "<fire_f></fire_f>",
+		label: "爐心材料測試",
+		desc: "吸附式酒精爐（如防火綿酒精爐），填充的爐心使用不同吸附材質的比較。",
+		thumb: "images/material/thumb.jpg"
+	},
+	{
+		href: "alcoholstove_spinoff.html",
+		icon: "<fire_f></fire_f>",
+		label: "番外篇",
+		desc: "一些固態燃料測試之類的。",
+		thumb: "images/solidfuelstove/thumb.jpg"
+	}
+];
 
 function WriteAlcoholStoveNavigator() {
-	WriteHTML("alcoholstovenavigator",
-		"<div class=\"graybox\" align=\"left\">" +
-		"  <h3 class=\"tab\">酒精爐專區</h3>" +
-		"  <div class=\"naviGrid\">" +
-		"    <a href=\"alcoholstove_intro.html\"><fire_f></fire_f>介紹</a>" +
-		"    <a href=\"alcoholstove_effectivity.html\"><fire_f></fire_f>對比高山瓦斯爐效益</a>" +
-		"    <a href=\"alcoholstove_warning.html\"><warningicon></warningicon>警告！！！</a>" +
-		"    <a href=\"alcoholstove_type.html\"><fire_f></fire_f>酒精爐類型</a>" +
-		"    <a href=\"alcoholstove_current.html\"><fire_f></fire_f>現役酒精爐</a>" +
-		"    <a href=\"alcoholstove_dispose.html\"><fire_f></fire_f>已丟棄的酒精爐</a>" +
-		"    <a href=\"alcoholstove_stand.html\"><fire_f></fire_f>爐架</a>" +
-		"    <a href=\"alcoholstove_windscreen.html\"><fire_f></fire_f>擋風板</a>" +
-		"    <a href=\"alcoholstove_fuel.html\"><fire_f></fire_f>燃料</a>" +
-		"    <a href=\"alcoholstove_ignition.html\"><fire_f></fire_f>點火方式</a>" +
-		"    <a href=\"alcoholstove_material.html\"><fire_f></fire_f>爐心材料測試</a>" +
-		"    <a href=\"alcoholstove_spinoff.html\"><fire_f></fire_f>番外篇</a>" +
-		"  </div>" +
-		"</div>"
-	);
+	let html = '<div class="graybox" align="left">';
+	html += '<h3 class="tab">酒精爐專區</h3>';
+	html += '<div class="naviGrid">';
+	
+	for (const item of alcoholStoveNavItems) {
+		html += `<a href="${item.href}">${item.icon}${item.label}</a>`;
+	}
+	
+	html += '</div></div>';
+	WriteHTML("alcoholstovenavigator", html);
 }
+
 
 function WriteAlcoholStoveNavigatorLarge() {
-	WriteHTML("alcoholstovenavigator_large",
-		"  <div class=\"naviGridLarge\">" +
-		"    <a href=\"alcoholstove_intro.html\">		<navi-thumb style=\"background-image: url('images/introdution/thumb.jpg');\"></navi-thumb><navi-card><navi-title><fire_f></fire_f>介紹</navi-title><navi-desc>輕量化到不知道還可以輕什麼？來玩酒精爐吧！</navi-desc></navi-card></a>" +
-		"    <a href=\"alcoholstove_effectivity.html\">	<navi-thumb style=\"background-image: url('images/effectivity/thumb.jpg');\"></navi-thumb><navi-card><navi-title><fire_f></fire_f>對比高山瓦斯爐效益</navi-title><navi-desc>比較酒精爐在重量上的優勢，以及講講高山瓦斯爐的不可取代性。</navi-desc></navi-card></a>" +
-		"    <a href=\"alcoholstove_warning.html\">		<navi-thumb style=\"background-image: url('images/warning/thumb.jpg');\"></navi-thumb><navi-card><navi-title><warningicon></warningicon>警告！！！</navi-title><navi-desc>談論使用酒精爐的一些細節所導致的危險性。</navi-desc></navi-card></a>" +
-		"    <a href=\"alcoholstove_type.html\">		<navi-thumb style=\"background-image: url('images/stovetype/thumb.jpg');\"></navi-thumb><navi-card><navi-title><fire_f></fire_f>酒精爐類型</navi-title><navi-desc>介紹幾種不同類型的酒精爐燃燒的原理。</navi-desc></navi-card></a>" +
-		"    <a href=\"alcoholstove_current.html\">		<navi-thumb style=\"background-image: url('images/stove/thumb.gif');\"></navi-thumb><navi-card><navi-title><fire_f></fire_f>現役酒精爐</navi-title><navi-desc>介紹阿前購買與DIY自製的酒精爐。</navi-desc></navi-card></a>" +
-		"    <a href=\"alcoholstove_dispose.html\">		<navi-thumb style=\"background-image: url('images/stove/thumb_discard.jpg');\"></navi-thumb><navi-card><navi-title><fire_f></fire_f>已丟棄的酒精爐</navi-title><navi-desc>將一些製作失敗效果不好而丟棄的酒精爐移駕至此。</navi-desc></navi-card></a>" +
-		"    <a href=\"alcoholstove_stand.html\">		<navi-thumb style=\"background-image: url('images/stovestand/thumb.gif');\"></navi-thumb><navi-card><navi-title><fire_f></fire_f>爐架</navi-title><navi-desc>酒精爐沒設計自帶爐架的話，都需要額外的爐架。</navi-desc></navi-card></a>" +
-		"    <a href=\"alcoholstove_windscreen.html\">	<navi-thumb style=\"background-image: url('images/windscreen/thumb.gif');\"></navi-thumb><navi-card><navi-title><fire_f></fire_f>擋風板</navi-title><navi-desc>酒精爐非常容易受風影響，擋風板可以避免熱源過度散失。</navi-desc></navi-card></a>" +
-		"    <a href=\"alcoholstove_fuel.html\">	<navi-thumb style=\"background-image: url('images/fuel/thumb.jpg');\"></navi-thumb><navi-card><navi-title><fire_f></fire_f>燃料</navi-title><navi-desc>不同類型酒精燃料的比較，與混合燃料、焰色反應實驗。</navi-desc></navi-card></a>" +
-		"    <a href=\"alcoholstove_ignition.html\">	<navi-thumb style=\"background-image: url('images/fire_e.svg');\"></navi-thumb><navi-card><navi-title><fire_f></fire_f>點火方式</navi-title><navi-desc>酒精在低溫或缺氧狀態下如何增加點燃的成功率。</navi-desc></navi-card></a>" +
-		"    <a href=\"alcoholstove_material.html\">	<navi-thumb style=\"background-image: url('images/material/thumb.jpg');\"></navi-thumb><navi-card><navi-title><fire_f></fire_f>爐心材料測試</navi-title><navi-desc>吸附式酒精爐（如防火綿酒精爐），填充的爐心使用不同吸附材質的比較。</navi-desc></navi-card></a>" +
-		"    <a href=\"alcoholstove_spinoff.html\">		<navi-thumb style=\"background-image: url('images/solidfuelstove/thumb.jpg');\"></navi-thumb><navi-card><navi-title><fire_f></fire_f>番外篇</navi-title><navi-desc>一些固態燃料測試之類的。</navi-desc></navi-card></a>" +
-		"  </div>" 
-	);
+	let html = '<div class="naviGridLarge">';
+	
+	for (const item of alcoholStoveNavItems) {
+		html += `<a href="${item.href}">` +
+				`<navi-thumb style="background-image: url('${item.thumb}');"></navi-thumb>` +
+				`<navi-card>` +
+					`<navi-title>${item.icon}${item.label}</navi-title>` +
+					`<navi-desc>${item.desc}</navi-desc>` +
+				`</navi-card>` +
+				`</a>`;
+	}
+	
+	html += '</div>';
+	WriteHTML("alcoholstovenavigator_large", html);
 }
 
+// 🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
 
-function WriteULNavigator()
-{
-	WriteHTML("ul_navigator",
-		"<div class=\"graybox\" align=\"left\">	"
-		+" <h3 class=\"tab\">輕量化登山</h3>"
-		+"  <div class=\"naviGrid\">" 
-		+"    <a href=\"ul_tent.html\"><mountain></mountain>阿前的帳篷</a>"
-		+"    <a href=\"ul_backpack.html\"><mountain></mountain>阿前的登山包</a>"
-		+"  </div>"
-		+"</div>"
-	);
+const ulNavItems = [
+	{
+		href: "ul_tent.html",
+		icon: "<mountain></mountain>",
+		label: "阿前的帳篷",
+		desc: "介紹阿前登山一路上使用的帳篷。",
+		thumb: "images/tent/thumb.jpg"
+	},
+	{
+		href: "ul_backpack.html",
+		icon: "<mountain></mountain>",
+		label: "阿前的登山包",
+		desc: "包包的體積與重量很大程度影響整體背負的重量。",
+		thumb: "images/backpack/thumb.jpg"
+	}
+];
+function WriteULNavigator() {
+	let html = '<div class="graybox" align="left">';
+	html += '<h3 class="tab">輕量化登山</h3>';
+	html += '<div class="naviGrid">';
+	
+	for (const item of ulNavItems) {
+		html += `<a href="${item.href}">${item.icon}${item.label}</a>`;
+	}
+	
+	html += '</div></div>';
+	WriteHTML("ul_navigator", html);
 }
-function WriteULNavigatorLarge()
-{
-	WriteHTML("ulnavigator_large",
-		"  <div class=\"naviGridLarge\">"
-		+"    <a href=\"ul_tent.html\">			<navi-thumb style=\"background-image: url('images/tent/thumb.jpg');\"></navi-thumb><navi-card><navi-title><mountain></mountain>阿前的帳篷</navi-title><navi-desc>介紹阿前登山一路上使用的帳篷。</navi-desc></navi-card></a>"
-		+"    <a href=\"ul_backpack.html\">		<navi-thumb style=\"background-image: url('images/backpack/thumb.jpg');\"></navi-thumb><navi-card><navi-title><mountain></mountain>阿前的登山包</navi-title><navi-desc>包包的體積與重量很大程度影響整體背負的重量。</navi-desc></navi-card></a>"
-		+"  </div>"
-	);
+function WriteULNavigatorLarge() {
+	let html = '<div class="naviGridLarge">';
+	
+	for (const item of ulNavItems) {
+		html += `<a href="${item.href}">` +
+				`<navi-thumb style="background-image: url('${item.thumb}');"></navi-thumb>` +
+				`<navi-card>` +
+					`<navi-title>${item.icon}${item.label}</navi-title>` +
+					`<navi-desc>${item.desc}</navi-desc>` +
+				`</navi-card>` +
+				`</a>`;
+	}
+	
+	html += '</div>';
+	WriteHTML("ulnavigator_large", html);
 }
 
+// 🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
 
 function ToggleArrowButton()
 {
 	var html = 
 	"<button class=\"circle-toggle\" onclick=\"toggleNextDiv(this);\">"
 	+"<!-- 收合狀態的 SVG -->"
-    +"<svg id=\"collapseIcon\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"6 6 12 12\" width=\"24\" height=\"24\">"
-    +" <path d=\"M9 6l6 6-6 6V6z\"/>"
-    +"</svg>"
-    +"</button>";
+		+"<svg id=\"collapseIcon\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"6 6 12 12\" width=\"24\" height=\"24\">"
+		+" <path d=\"M9 6l6 6-6 6V6z\"/>"
+		+"</svg>"
+		+"</button>";
 	document.write(html);
 }
 
 function toggleNextDiv(button) {
-  let el = button.parentElement.nextElementSibling;
-  
-  if (el && el.tagName === 'DIV') {
-    const isExpanded = el.classList.toggle('expanded');
-    
-    // 切換收合/展開的 SVG
-    const svg = button.querySelector('svg');
-    if (isExpanded) {
-      svg.innerHTML = '<path d="M6 9l6 6 6-6H6z"/>';  // 展開狀態的箭頭（▼）
-    } else {
-      svg.innerHTML = '<path d="M9 6l6 6-6 6V6z"/>';  // 收合狀態的箭頭（▶）
-    }
-  }
+	let el = button.parentElement.nextElementSibling;
+	
+	if (el && el.tagName === 'DIV') {
+		const isExpanded = el.classList.toggle('expanded');
+		
+		// 切換收合/展開的 SVG
+		const svg = button.querySelector('svg');
+		if (isExpanded) {
+			svg.innerHTML = '<path d="M6 9l6 6 6-6H6z"/>';  // 展開狀態的箭頭（▼）
+		} else {
+			svg.innerHTML = '<path d="M9 6l6 6-6 6V6z"/>';  // 收合狀態的箭頭（▶）
+		}
+	}
 }

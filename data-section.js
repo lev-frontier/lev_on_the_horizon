@@ -1,3 +1,8 @@
+function hasRedHeart(el) {
+  return el.querySelector && el.querySelector('redheart');
+}
+
+
 document.addEventListener('DOMContentLoaded', function () {
   const tocContainer = document.getElementById('toc');
   const sectionIndex = document.getElementById('sectionIndex');
@@ -10,15 +15,40 @@ document.addEventListener('DOMContentLoaded', function () {
 
   nodes.forEach((node) => {
     // 取得標題
-    let title = node.getAttribute('data-section')?.trim() || '';
-    if (!title) {
-      if (/^H[1-6]$/i.test(node.tagName)) {
-        title = node.innerText.trim();
-      } else {
-        const firstHeading = node.querySelector('h1,h2,h3,h4,h5,h6');
-        if (firstHeading) title = firstHeading.innerText.trim();
-      }
-    }
+	let rawTitle = node.getAttribute('data-section')?.trim() || '';
+	let title = rawTitle;  // 最終要用的 title 字串
+
+	// 判斷是否有 <redheart>，優先檢查 node 本身，沒找到再找裡面第一個標題
+	let redheartExists = false;
+
+	if (rawTitle) {
+	  // data-section 有值，但還是要判斷 redheart
+	  if (hasRedHeart(node)) {
+		redheartExists = true;
+	  } else {
+		// 再找子標題元素看有沒有
+		const firstHeading = node.querySelector('h1,h2,h3,h4,h5,h6');
+		if (firstHeading && hasRedHeart(firstHeading)) {
+		  redheartExists = true;
+		}
+	  }
+	} else {
+	  // data-section 沒值，要取得標題並判斷 redheart
+	  if (/^H[1-6]$/i.test(node.tagName)) {
+		title = node.innerText.trim();
+		if (hasRedHeart(node)) redheartExists = true;
+	  } else {
+		const firstHeading = node.querySelector('h1,h2,h3,h4,h5,h6');
+		if (firstHeading) {
+		  title = firstHeading.innerText.trim();
+		  if (hasRedHeart(firstHeading)) redheartExists = true;
+		}
+	  }
+	}
+	// 如果有 <redheart> 就在 title 前加標籤
+	if (redheartExists && title) {
+	  title = '\u2764\uFE0F' + title; /* Unicode ❤️ */
+	}
     if (!title) return;
 
     // 決定層級
